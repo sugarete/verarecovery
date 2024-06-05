@@ -1,8 +1,11 @@
 # Reference
 references/utils
-references/serpent/Serpent-implementation
 references/serpent/serpent-algorithm
 references/pbkdf2/whirlpool/WhirlpoolHashEngine/
+/references/serpent/Serpent-Implementation
+/references/spec/img
+/references/spec/diagram
+
 # Test
 test/veracrypt_volume
 
@@ -19,4 +22,3 @@ master/spec/diagram/*.*
 /ise/serpent2
 /ise/passwordgen
 /ise/xts-serpent
-/references/serpent/Serpent-Implementation
