@@ -58,7 +58,7 @@ module serpent_encrypt_full_tb;
     $display("Output Data: %h", o_data);
 
     // Finish simulation
-    #100 $finish;
+    #5 $finish;
   end
 
   // Monitor signals

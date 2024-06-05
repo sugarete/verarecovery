@@ -18,12 +18,12 @@ wire [127:0] out_sbox;
 
 sboxes sbox (
     .i_data(i_data),
-    .i_Sbox_index(i_round % 8),
+    .i_Sbox_index((i_round-1) % 6'd8),
     .o_data(out_sbox)
 );
 
 linear_transform lt (
-    .i_round(i_round),
+    .i_round(i_round-1),
     .i_data(out_sbox),
     .o_data(o_data)
 );

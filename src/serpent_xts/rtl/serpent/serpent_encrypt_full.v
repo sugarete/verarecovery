@@ -83,6 +83,7 @@ always @(posedge i_clk or negedge i_rstn) begin
                     serpent_encrypt_full_state <= ENCRYPT;
                     begin_key_schedule <= 0;
                     enable_encrypt <= 1;
+                    write_en <= 0;
                     read_en <= 1;
                 end
             end

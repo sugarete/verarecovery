@@ -19,11 +19,12 @@ wire [127:0] data_out;
 reg [127:0] data_in;
 reg valid;
 
-reg [1:0] serpent_en_state;
-parameter IDLE          = 2'b00;
-parameter IP            = 2'b01;
-parameter ROUND         = 2'b10;
-parameter FP            = 2'b11;
+reg [2:0] serpent_en_state;
+parameter IDLE          = 3'b000;
+parameter IP            = 3'b001;
+parameter ROUND         = 3'b010;
+parameter FP            = 3'b011;
+parameter MIX32         = 3'b100;
 
 
 reg[8*5-1:0] displaystate_serpent_en;
@@ -63,20 +64,24 @@ always @(posedge i_clk or negedge i_rstn) begin
                 end
             end
             IP: begin
-                data_in <= initial_permutation_output ^ i_key;
+                data_in <= initial_permutation_output;
                 serpent_en_state <= ROUND;
-                round <= round + 1;
             end
             ROUND: begin
-                if(round < 31) begin
+                if(round == 0) begin
+                    data_in <= data_in ^ i_key;
+                    round <= round + 1;
+                end else if(round < 31) begin
                     data_in <= data_out ^ i_key;
                     round <= round + 1;
-                    serpent_en_state <= ROUND;
                 end else begin
                     data_in <= data_out ^ i_key;
-                    serpent_en_state <= FP;
                     round <= round + 1;
+                    serpent_en_state <= MIX32;
                 end
+            end
+            MIX32: begin
+                serpent_en_state <= FP;
             end
             FP: begin                
                 final_permutation_input <= data_out ^ i_key;
@@ -93,6 +98,7 @@ always @(*) begin
         IP:         displaystate_serpent_en = "IP";
         ROUND:      displaystate_serpent_en = "ROUND";
         FP:         displaystate_serpent_en = "FP";
+        MIX32:      displaystate_serpent_en = "MIX32";
         default:    displaystate_serpent_en = "IDLE";
     endcase
 end
