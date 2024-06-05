@@ -25,6 +25,9 @@ parameter IP            = 2'b01;
 parameter ROUND         = 2'b10;
 parameter FP            = 2'b11;
 
+
+reg[8*5-1:0] displaystate_serpent_en;
+
 //---------instances------------
 initial_permutation initial_permutation_inst (
     .i_data(i_data),
@@ -33,7 +36,6 @@ initial_permutation initial_permutation_inst (
 
 serpent_en_round serpent_en_round_inst (
     .i_data(data_in),
-    .i_subkey(i_key),
     .i_round(round),
     .o_data(data_out)
 );
@@ -56,25 +58,43 @@ always @(posedge i_clk or negedge i_rstn) begin
         case (serpent_en_state)
             IDLE: begin
                 round <= 0;
-                if (i_en && i_subkey_valid) begin
-                    data_in <= initial_permutation_output;
-                    serpent_en_state <= ROUND;
+                if (i_en == 1'b1 && i_subkey_valid == 1'b1) begin
+                    serpent_en_state <= IP;
                 end
+            end
+            IP: begin
+                data_in <= initial_permutation_output ^ i_key;
+                serpent_en_state <= ROUND;
+                round <= round + 1;
             end
             ROUND: begin
-                round <= round + 1;
-                data_in <= data_out;
-                if (round == 31) begin
+                if(round < 31) begin
+                    data_in <= data_out ^ i_key;
+                    round <= round + 1;
+                    serpent_en_state <= ROUND;
+                end else begin
+                    data_in <= data_out ^ i_key;
                     serpent_en_state <= FP;
+                    round <= round + 1;
                 end
             end
-            FP: begin
+            FP: begin                
                 final_permutation_input <= data_out ^ i_key;
                 valid <= 1;
                 serpent_en_state <= IDLE;
             end
         endcase
     end
+end
+
+always @(*) begin
+    case (serpent_en_state)
+        IDLE:       displaystate_serpent_en = "IDLE";
+        IP:         displaystate_serpent_en = "IP";
+        ROUND:      displaystate_serpent_en = "ROUND";
+        FP:         displaystate_serpent_en = "FP";
+        default:    displaystate_serpent_en = "IDLE";
+    endcase
 end
 
 endmodule

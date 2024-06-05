@@ -1,7 +1,9 @@
 module key_mem (
+    input wire i_clk,
+    input wire i_rstn,
     input wire i_write_en,
     input wire i_read_en,
-    input wire i_addr,
+    input wire [5:0] i_addr,
     input wire [127:0] i_key,
     output wire [127:0] o_key
 );
@@ -12,14 +14,17 @@ reg [127:0] key_out;
 
 assign o_key = key_out;
 
-always@(i_write_en, i_read_en, i_addr) begin
-    if(i_write_en) begin
-        //co the dung blocking cho nay duoc khong?
-        //mem[i_addr] <= i_key;
-        mem[i_addr] = i_key;
+always @(posedge i_clk or negedge i_rstn)
+begin
+    if (!i_rstn) begin
+        for (i = 0; i < 32; i = i + 1)
+            mem[i] <= 128'b0;
     end
-    if(i_read_en) begin
-        key_out = mem[i_addr];
+    else begin
+        if (i_write_en)
+            mem[i_addr] <= i_key;
+        if (i_read_en)
+            key_out <= mem[i_addr];
     end
 end
     

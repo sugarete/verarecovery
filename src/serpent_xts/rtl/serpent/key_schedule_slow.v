@@ -18,7 +18,6 @@ reg [7:0] word_round;
 reg [5:0] round;
 // key_valid is a 1-bit register, use to store the key valid signal, 1 means key is valid and ready to use
 reg key_valid;
-
 // Sbox input and index
 reg [127:0] sbox_input;
 reg [2:0] sbox_index;
@@ -31,7 +30,9 @@ reg [1:0] key_schedule_state;
 parameter IDLE          = 2'b00;
 parameter WORD_EXPAND   = 2'b01;
 parameter KEY_GEN  = 2'b10;
+parameter WAIT          = 2'b11;
 
+reg [8*11-1:0] displaystate_key_schedule;
 //---------instances------------
 sboxes sboxes_inst (
     .i_data(sbox_input),
@@ -92,11 +93,27 @@ always @(posedge i_clk or negedge i_rstn) begin
                     round <= round + 1;
                 end else begin
                     key_valid <= 1;
-                    key_schedule_state <= IDLE;
+                    key_schedule_state <= WAIT;
                 end                    
+            end
+            WAIT: begin
+                key_schedule_state <= IDLE;
+            end
+            default: begin
+                key_schedule_state <= IDLE;
             end
         endcase
     end    
+end
+
+always @(*) begin
+    case(key_schedule_state)
+        IDLE:       displaystate_key_schedule = "IDLE";
+        WORD_EXPAND:   displaystate_key_schedule = "WORD_EXPAND";
+        KEY_GEN:    displaystate_key_schedule = "KEY_GEN";
+        WAIT:       displaystate_key_schedule = "WAIT";
+        default:    displaystate_key_schedule = "IDLE";
+    endcase
 end
 
 endmodule
