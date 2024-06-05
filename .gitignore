@@ -1,0 +1,22 @@
+# Reference
+references/utils
+references/serpent/Serpent-implementation
+references/serpent/serpent-algorithm
+references/pbkdf2/whirlpool/WhirlpoolHashEngine/
+# Test
+test/veracrypt_volume
+
+# Quartus
+quartus/workspace
+
+#M
+master/spec/img/
+master/spec/diagram/*.*
+!master/spec/diagram/*.drawio
+
+/ise/pbkdf2-hmac-whirlpool
+/ise/serpent
+/ise/serpent2
+/ise/passwordgen
+/ise/xts-serpent
+/references/serpent/Serpent-Implementation
