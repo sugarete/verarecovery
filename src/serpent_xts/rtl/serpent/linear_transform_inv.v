@@ -4,7 +4,7 @@ module linear_transform_inv (
     output wire [127:0] o_data
 );
 
-assign o_data = i_round == 6'd32 ? linear_transform_inv(i_data) : i_data;
+assign o_data = i_round == 6'd0 ? linear_transform_inv(i_data) : i_data;
 
 
 //---------function----------

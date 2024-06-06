@@ -1,4 +1,4 @@
-module serpent_encrypt_full (
+module serpent_en_top (
     input wire i_clk,
     input wire i_rstn,
     input wire i_master_key_valid,
@@ -99,10 +99,10 @@ end
 
 always @(*) begin
     case(serpent_encrypt_full_state)
-        IDLE:       displaystate = "IDLE";
+        IDLE:           displaystate = "IDLE";
         KEY_SCHEDULE:   displaystate = "KEY_SCHEDULE";
-        ENCRYPT:    displaystate = "ENCRYPT";
-        default:    displaystate = "IDLE";
+        ENCRYPT:        displaystate = "ENCRYPT";
+        default:        displaystate = "IDLE";
     endcase
 end
 

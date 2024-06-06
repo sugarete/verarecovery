@@ -6,7 +6,7 @@ module serpent_en_round (
 );
 
 //---------wires, registers----------
-wire [127:0] out_mix_key;
+// wire [127:0] out_mix_key;
 wire [127:0] out_sbox;
 
 //---------instances----------

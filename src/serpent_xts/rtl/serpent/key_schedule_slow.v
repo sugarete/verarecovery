@@ -8,8 +8,7 @@ module key_schedule_slow (
     output wire o_subkey_valid
 );
 
-//---------wires, registers----------
-
+//-------wires, registers--------
 // prekey is a 140x32-bit register, use to store word expanded for key schedule
 reg [31:0] prekey [139:0];
 // word_round is a 8-bit register, use to store the current word round
@@ -108,11 +107,11 @@ end
 
 always @(*) begin
     case(key_schedule_state)
-        IDLE:       displaystate_key_schedule = "IDLE";
-        WORD_EXPAND:   displaystate_key_schedule = "WORD_EXPAND";
-        KEY_GEN:    displaystate_key_schedule = "KEY_GEN";
-        WAIT:       displaystate_key_schedule = "WAIT";
-        default:    displaystate_key_schedule = "IDLE";
+        IDLE:           displaystate_key_schedule = "IDLE";
+        WORD_EXPAND:    displaystate_key_schedule = "WORD_EXPAND";
+        KEY_GEN:        displaystate_key_schedule = "KEY_GEN";
+        WAIT:           displaystate_key_schedule = "WAIT";
+        default:        displaystate_key_schedule = "IDLE";
     endcase
 end
 

@@ -44,7 +44,7 @@ module serpent_encrypt_full_tb;
     #10 i_rstn = 1;
 
     // Provide input values
-    i_key = 256'h0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef;
+    i_key = 256'h00112233445566778899aabbccddeeffffeeddccbbaa99887766554433221100;
     i_data = 128'h0123456789abcdef0123456789abcdef;
 
     // Start encryption process
