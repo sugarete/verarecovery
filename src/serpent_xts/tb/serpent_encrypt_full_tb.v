@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module serpent_encrypt_full_tb;
+module serpent_en_top_tb;
 
   // Clock and reset signals
   reg i_clk;
@@ -17,7 +17,7 @@ module serpent_encrypt_full_tb;
   wire o_data_valid;
 
   // Instantiate the module under test
-  serpent_encrypt_full uut (
+  serpent_en_top uut (
       .i_clk(i_clk),
       .i_rstn(i_rstn),
       .i_master_key_valid(i_master_key_valid),
@@ -45,7 +45,7 @@ module serpent_encrypt_full_tb;
 
     // Provide input values
     i_key = 256'h00112233445566778899aabbccddeeffffeeddccbbaa99887766554433221100;
-    i_data = 128'h0123456789abcdef0123456789abcdef;
+    i_data = 128'h0123456789abcdeffedcba9876543210;
 
     // Start encryption process
     #10 i_master_key_valid = 1;

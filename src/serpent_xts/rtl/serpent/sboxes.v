@@ -1,15 +1,18 @@
 module sboxes (
-    input wire [127:0] i_data,
+    input wire [31:0] i_word0,
+    input wire [31:0] i_word1,
+    input wire [31:0] i_word2,
+    input wire [31:0] i_word3,
     input wire [2:0] i_Sbox_index,
     output wire [127:0] o_data
 );
 
     // Split the input data into four 32-bit words
     wire [31:0] w0, w1, w2, w3;
-    assign w0 = i_data[127:96];
-    assign w1 = i_data[95:64];
-    assign w2 = i_data[63:32];
-    assign w3 = i_data[31:0];
+    assign w0 = i_word0;
+    assign w1 = i_word1;
+    assign w2 = i_word2;
+    assign w3 = i_word3;
 
     // Intermediate wires for 4-bit slices
     wire [3:0] bit_slice[31:0];
@@ -43,7 +46,7 @@ module sboxes (
         end
     endgenerate
 
-    assign o_data = {w0_out, w1_out, w2_out, w3_out};
+    assign o_data = {w3_out, w2_out, w1_out, w0_out};
 
     // S-box definitions
     function [3:0] Sbox;

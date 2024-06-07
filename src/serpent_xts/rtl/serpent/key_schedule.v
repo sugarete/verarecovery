@@ -33,14 +33,6 @@ assign o_subkey = sbox_output;
 assign o_address = round - 1;
 assign o_subkey_valid = key_valid;
 
-//----------function------------
-function ROL11;
-    input [31:0] data;
-    begin
-        ROL11 = {data[20:0], data[31:21]};
-    end
-endfunction
-
 //---------key schedule----------
 always @(posedge i_clk or negedge i_rstn) begin
     if (~i_rstn) begin
@@ -68,7 +60,7 @@ always @(posedge i_clk or negedge i_rstn) begin
                 end
             end
             KEY_SCHEDULE: begin
-                if(round < 33) begin                
+                if(round < 32) begin                
                     if(round != 0) begin
                         sbox_input <= {prekey[8 + (round-1)*4 - 8], prekey[8 + (round-1)*4 - 5], prekey[8 + (round-1)*4 - 3], prekey[8 + (round-1)*4 - 1]};
                         sbox_index <= (35 - round - 1) % 32;

@@ -18,7 +18,7 @@ reg [5:0] round;
 // key_valid is a 1-bit register, use to store the key valid signal, 1 means key is valid and ready to use
 reg key_valid;
 // Sbox input and index
-reg [127:0] sbox_input;
+reg [31:0] word0, word1, word2, word3;
 reg [2:0] sbox_index;
 wire [127:0] sbox_output;
 
@@ -28,21 +28,27 @@ integer i;
 reg [1:0] key_schedule_state;
 parameter IDLE          = 2'b00;
 parameter WORD_EXPAND   = 2'b01;
-parameter KEY_GEN  = 2'b10;
+parameter KEY_GEN       = 2'b10;
 parameter WAIT          = 2'b11;
 
 reg [8*11-1:0] displaystate_key_schedule;
 //---------instances------------
 sboxes sboxes_inst (
-    .i_data(sbox_input),
+    .i_word0(word0),
+    .i_word1(word1),
+    .i_word2(word2),
+    .i_word3(word3),
     .i_Sbox_index(sbox_index),
-    .o_data(sbox_output)
-);
-
-initial_permutation initial_permutation_inst (
-    .i_data(sbox_output),
     .o_data(o_subkey)
 );
+
+//----------function------------
+function [31:0] ROL11;
+    input [31:0] data;
+    begin
+        ROL11 = {data[20:0], data[31:21]};
+    end
+endfunction
 
 //---------assignment-----------
 assign o_address = round - 1;
@@ -65,21 +71,28 @@ always @(posedge i_clk or negedge i_rstn) begin
                 round <= 0;
                 if (i_begin) begin
                     key_valid <= 0;
-                    prekey[0] <= i_key[255:224];
-                    prekey[1] <= i_key[223:192];
-                    prekey[2] <= i_key[191:160];
-                    prekey[3] <= i_key[159:128];
-                    prekey[4] <= i_key[127:96];
-                    prekey[5] <= i_key[95:64];
-                    prekey[6] <= i_key[63:32];
-                    prekey[7] <= i_key[31:0];
+                    prekey[0] <= i_key[31:0];
+                    prekey[1] <= i_key[63:32];
+                    prekey[2] <= i_key[95:64];
+                    prekey[3] <= i_key[127:96];
+                    prekey[4] <= i_key[159:128];
+                    prekey[5] <= i_key[191:160];
+                    prekey[6] <= i_key[223:192];
+                    prekey[7] <= i_key[255:224];
+                    // prekey[0] <= i_key[255:224];
+                    // prekey[1] <= i_key[223:192];
+                    // prekey[2] <= i_key[191:160];
+                    // prekey[3] <= i_key[159:128];
+                    // prekey[4] <= i_key[127:96];
+                    // prekey[5] <= i_key[95:64];
+                    // prekey[6] <= i_key[63:32];
+                    // prekey[7] <= i_key[31:0];                
                     key_schedule_state <= WORD_EXPAND;
                 end
             end
             WORD_EXPAND: begin
-                if(word_round < 132) begin
-                    prekey[word_round + 8] <= ((prekey[word_round + 0] ^ prekey[word_round + 3] ^ prekey[word_round + 5] ^ prekey[word_round + 7] ^ 32'h9e3779b9 ^ word_round) << 11) | ((prekey[word_round + 0] ^ prekey[word_round + 3] ^ prekey[word_round + 5] ^ prekey[word_round + 7] ^ 32'h9e3779b9 ^ word_round) >> 21);
-                    // prekey[word_round + 8] <= prekey[word_round + 0] ^ prekey[word_round + 3] ^ prekey[word_round + 5] ^ prekey[word_round + 7] ^ 32'h9e3779b9 ^ word_round;
+                if(word_round < 132) begin                    
+                    prekey[word_round + 8] <= ROL11(prekey[word_round + 0] ^ prekey[word_round + 3] ^ prekey[word_round + 5] ^ prekey[word_round + 7] ^ 32'h9e3779b9 ^ word_round);
                     word_round <= word_round + 1;
                 end else begin
                     key_schedule_state <= KEY_GEN;
@@ -87,7 +100,10 @@ always @(posedge i_clk or negedge i_rstn) begin
             end
             KEY_GEN: begin
                 if(round < 33) begin                
-                    sbox_input <= {prekey[8 + round*4], prekey[8 + round*4 + 1], prekey[8 + round*4 + 2], prekey[8 + round*4 + 3]};
+                    word0 <= prekey[8 + (round)*4 + 0];
+                    word1 <= prekey[8 + (round)*4 + 1];
+                    word2 <= prekey[8 + (round)*4 + 2];
+                    word3 <= prekey[8 + (round)*4 + 3];
                     sbox_index <= (3 - round) % 8;
                     round <= round + 1;
                 end else begin

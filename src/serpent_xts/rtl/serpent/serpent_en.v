@@ -17,23 +17,25 @@ reg [5:0] round;
 
 wire [127:0] data_out;
 reg [127:0] data_in;
+reg [127:0] mixed_round_32;
 reg valid;
 
 reg [2:0] serpent_en_state;
 parameter IDLE          = 3'b000;
-parameter IP            = 3'b001;
+parameter MIXKEY        = 3'b001;
+// parameter IP            = 3'b001;
 parameter ROUND         = 3'b010;
-parameter FP            = 3'b011;
+// parameter FP            = 3'b011;
 parameter MIX32         = 3'b100;
 
 
-reg[8*5-1:0] displaystate_serpent_en;
+reg[8*6-1:0] displaystate_serpent_en;
 
 //---------instances------------
-initial_permutation initial_permutation_inst (
-    .i_data(i_data),
-    .o_data(initial_permutation_output)
-);
+// initial_permutation initial_permutation_inst (
+//     .i_data(i_data),
+//     .o_data(initial_permutation_output)
+// );
 
 serpent_en_round serpent_en_round_inst (
     .i_data(data_in),
@@ -41,14 +43,15 @@ serpent_en_round serpent_en_round_inst (
     .o_data(data_out)
 );
 
-final_permutation final_permutation_inst (
-    .i_data(final_permutation_input),
-    .o_data(o_data)
-);
+// final_permutation final_permutation_inst (
+//     .i_data(final_permutation_input),
+//     .o_data(o_data)
+// );
 
 //---------assignment-----------
 assign o_address = round;
 assign o_data_valid = valid;
+assign o_data = mixed_round_32;
 
 always @(posedge i_clk or negedge i_rstn) begin
     if (~i_rstn) begin
@@ -60,34 +63,41 @@ always @(posedge i_clk or negedge i_rstn) begin
             IDLE: begin
                 round <= 0;
                 if (i_en == 1'b1 && i_subkey_valid == 1'b1) begin
-                    serpent_en_state <= IP;
+                    serpent_en_state <= MIXKEY;
                 end
             end
-            IP: begin
-                data_in <= initial_permutation_output;
-                serpent_en_state <= ROUND;
-            end
-            ROUND: begin
+            // IP: begin
+            //     data_in <= initial_permutation_output;
+            //     serpent_en_state <= ROUND;
+            // end
+            MIXKEY: begin
                 if(round == 0) begin
-                    data_in <= data_in ^ i_key;
-                    round <= round + 1;
-                end else if(round < 31) begin
-                    data_in <= data_out ^ i_key;
-                    round <= round + 1;
+                    data_in <= i_data ^ i_key;
+                    serpent_en_state <= ROUND;
                 end else begin
                     data_in <= data_out ^ i_key;
+                    serpent_en_state <= ROUND;
+                end
+            end
+            ROUND: begin
+                if(round < 31) begin
+                    round <= round + 1;
+                    serpent_en_state <= MIXKEY;
+                end else begin
                     round <= round + 1;
                     serpent_en_state <= MIX32;
                 end
             end
             MIX32: begin
-                serpent_en_state <= FP;
-            end
-            FP: begin                
-                final_permutation_input <= data_out ^ i_key;
+                mixed_round_32 <= data_out ^ i_key;
                 valid <= 1;
                 serpent_en_state <= IDLE;
             end
+            // FP: begin                
+            //     final_permutation_input <= data_out ^ i_key;
+            //     valid <= 1;
+            //     serpent_en_state <= IDLE;
+            // end
         endcase
     end
 end
@@ -95,9 +105,10 @@ end
 always @(*) begin
     case (serpent_en_state)
         IDLE:       displaystate_serpent_en = "IDLE";
-        IP:         displaystate_serpent_en = "IP";
+        // IP:         displaystate_serpent_en = "IP";
+        MIXKEY:     displaystate_serpent_en = "MIXKEY";
         ROUND:      displaystate_serpent_en = "ROUND";
-        FP:         displaystate_serpent_en = "FP";
+        // FP:         displaystate_serpent_en = "FP";
         MIX32:      displaystate_serpent_en = "MIX32";
         default:    displaystate_serpent_en = "IDLE";
     endcase
