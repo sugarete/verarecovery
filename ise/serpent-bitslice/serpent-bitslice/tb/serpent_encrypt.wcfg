@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/Code/verarecovery/ise/serpent-bitslice/serpent-bitslice/serpent_encrypt_top_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="serpent_encrypt_top_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/serpent_encrypt_top_tb/i_rstn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i_rstn</obj_property>
+      <obj_property name="ObjectShortName">i_rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serpent_encrypt_top_tb/i_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i_clk</obj_property>
+      <obj_property name="ObjectShortName">i_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="group71" type="group">
+      <obj_property name="label">io</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/serpent_encrypt_top_tb/i_enable_encrypt" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_enable_encrypt</obj_property>
+         <obj_property name="ObjectShortName">i_enable_encrypt</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/i_key" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_key[255:0]</obj_property>
+         <obj_property name="ObjectShortName">i_key[255:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/i_master_key_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_master_key_valid</obj_property>
+         <obj_property name="ObjectShortName">i_master_key_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/i_data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_data[127:0]</obj_property>
+         <obj_property name="ObjectShortName">i_data[127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/o_data_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">o_data_valid</obj_property>
+         <obj_property name="ObjectShortName">o_data_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/o_data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">o_data[127:0]</obj_property>
+         <obj_property name="ObjectShortName">o_data[127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group18" type="group">
+      <obj_property name="label">key storage</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/i_write_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_write_en</obj_property>
+         <obj_property name="ObjectShortName">i_write_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/i_read_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_read_en</obj_property>
+         <obj_property name="ObjectShortName">i_read_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/i_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_addr[5:0]</obj_property>
+         <obj_property name="ObjectShortName">i_addr[5:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/i_key" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_key[127:0]</obj_property>
+         <obj_property name="ObjectShortName">i_key[127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/o_key" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">o_key[127:0]</obj_property>
+         <obj_property name="ObjectShortName">o_key[127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem[32:0,127:0]</obj_property>
+         <obj_property name="ObjectShortName">mem[32:0,127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[32]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[32,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[32,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[31]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[31,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[31,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[30]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[30,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[30,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[29]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[29,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[29,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[28]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[28,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[28,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[27]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[27,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[27,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[26]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[26,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[26,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[25]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[25,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[25,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[24]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[24,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[24,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[23]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[23,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[23,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[22]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[22,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[22,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[21]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[21,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[21,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[20]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[20,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[20,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[19]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[19,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[19,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[18]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[18,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[18,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[17]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[17,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[17,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[16]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[16,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[16,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[15]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[15,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[15,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[14]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[14,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[14,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[13]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[13,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[13,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[12]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[12,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[12,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[11]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[11,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[11,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[10]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[10,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[10,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[9]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[9,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[9,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[8]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[8,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[8,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[7]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[7,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[7,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[6]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[6,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[6,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[5]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[5,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[4]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[4,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[4,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[3]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[3,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[3,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[2]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[2,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[2,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[1]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[1,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[1,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_storage/mem[0]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[0,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[0,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group44" type="group">
+      <obj_property name="label">key schedule</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_scheduler/i_begin" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_begin</obj_property>
+         <obj_property name="ObjectShortName">i_begin</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_scheduler/i_key" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_key[255:0]</obj_property>
+         <obj_property name="ObjectShortName">i_key[255:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_scheduler/o_subkey_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">o_subkey_valid</obj_property>
+         <obj_property name="ObjectShortName">o_subkey_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_scheduler/o_subkey" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">o_subkey[127:0]</obj_property>
+         <obj_property name="ObjectShortName">o_subkey[127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_scheduler/o_address" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">o_address[5:0]</obj_property>
+         <obj_property name="ObjectShortName">o_address[5:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_scheduler/word_round" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">word_round[7:0]</obj_property>
+         <obj_property name="ObjectShortName">word_round[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_scheduler/word" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">word[139:0,31:0]</obj_property>
+         <obj_property name="ObjectShortName">word[139:0,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_scheduler/key_round" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">key_round[5:0]</obj_property>
+         <obj_property name="ObjectShortName">key_round[5:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_scheduler/key_sbox_index" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">key_sbox_index[2:0]</obj_property>
+         <obj_property name="ObjectShortName">key_sbox_index[2:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_scheduler/key_word_0" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">key_word_0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">key_word_0[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_scheduler/key_word_1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">key_word_1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">key_word_1[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_scheduler/key_word_2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">key_word_2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">key_word_2[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_scheduler/key_word_3" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">key_word_3[31:0]</obj_property>
+         <obj_property name="ObjectShortName">key_word_3[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/key_scheduler/displaystate_key_schedule" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">displaystate_key_schedule[87:0]</obj_property>
+         <obj_property name="ObjectShortName">displaystate_key_schedule[87:0]</obj_property>
+         <obj_property name="Radix">ASCIIRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group70" type="group">
+      <obj_property name="label">block cipher</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/block_cipher/i_data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_data[127:0]</obj_property>
+         <obj_property name="ObjectShortName">i_data[127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/block_cipher/o_data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">o_data[127:0]</obj_property>
+         <obj_property name="ObjectShortName">o_data[127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/block_cipher/o_address" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">o_address[5:0]</obj_property>
+         <obj_property name="ObjectShortName">o_address[5:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/block_cipher/o_data_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">o_data_valid</obj_property>
+         <obj_property name="ObjectShortName">o_data_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/block_cipher/i_subkey_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_subkey_valid</obj_property>
+         <obj_property name="ObjectShortName">i_subkey_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/block_cipher/i_key" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_key[127:0]</obj_property>
+         <obj_property name="ObjectShortName">i_key[127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/block_cipher/word_0_in" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">word_0_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">word_0_in[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/block_cipher/word_1_in" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">word_1_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">word_1_in[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/block_cipher/word_2_in" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">word_2_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">word_2_in[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/block_cipher/word_3_in" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">word_3_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">word_3_in[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/block_cipher/word_0_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">word_0_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">word_0_out[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/block_cipher/word_1_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">word_1_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">word_1_out[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/block_cipher/word_2_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">word_2_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">word_2_out[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/block_cipher/word_3_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">word_3_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">word_3_out[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/block_cipher/encrypt_round" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">encrypt_round[5:0]</obj_property>
+         <obj_property name="ObjectShortName">encrypt_round[5:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/block_cipher/mixed_round_32" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mixed_round_32[127:0]</obj_property>
+         <obj_property name="ObjectShortName">mixed_round_32[127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_encrypt_top_tb/uut/block_cipher/displaystate_serpent_en" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">displaystate_serpent_en[47:0]</obj_property>
+         <obj_property name="ObjectShortName">displaystate_serpent_en[47:0]</obj_property>
+         <obj_property name="Radix">ASCIIRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

@@ -53,7 +53,7 @@ initial begin
     // ... (similar to test case 1, but with a 256-bit key)
 
     // Finish simulation
-    #10 $finish;
+    #100 $finish;
 end
 
 endmodule

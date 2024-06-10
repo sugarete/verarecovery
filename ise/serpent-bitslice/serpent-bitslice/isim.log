@@ -1,0 +1,40 @@
+ISim log file
+Running: D:\Code\verarecovery\ise\serpent-bitslice\serpent-bitslice\serpent_encrypt_top_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -view D:/Code/verarecovery/ise/serpent-bitslice/serpent-bitslice/tb/serpent_encrypt.wcfg -wdb D:/Code/verarecovery/ise/serpent-bitslice/serpent-bitslice/serpent_encrypt_top_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING:  For instance serpent_encrypt_stage_inst/apply_sbox/, width 3 of formal port i_sbox_index is not equal to width 32 of actual constant.
+Time resolution is 1 ps
+# onerror resume
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Time: 0, o_data: 00000000000000000000000000000000, o_data_valid: 0
+# run 1.00us
+# run 1.00us
+Output Data: 0ce18e5dbcec3dfd5587c720aa7838df
+Time: 2055000, o_data: 0ce18e5dbcec3dfd5587c720aa7838df, o_data_valid: 1
+Stopped at time : 2060 ns : File "D:/Code/verarecovery/src/serpent-bitslices/tb/serpent_encrypt_tob_tb.v" Line 61
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING:  For instance serpent_encrypt_stage_inst/apply_sbox/, width 3 of formal port i_sbox_index is not equal to width 32 of actual constant.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Time: 0, o_data: 00000000000000000000000000000000, o_data_valid: 0
+# run 1.00us
+# run 1.00us
+Output Data: 1149cfd5ee0dc3bca14fdb89c7a248a1
+Time: 2055000, o_data: 1149cfd5ee0dc3bca14fdb89c7a248a1, o_data_valid: 1
+Stopped at time : 2060 ns : File "D:/Code/verarecovery/src/serpent-bitslices/tb/serpent_encrypt_tob_tb.v" Line 61
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING:  For instance serpent_encrypt_stage_inst/apply_sbox/, width 3 of formal port i_sbox_index is not equal to width 32 of actual constant.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Time: 0, o_data: 00000000000000000000000000000000, o_data_valid: 0
+# run 1.00us
+# run 1.00us
+Output Data: 866820daf00e041c582c62d433c25ba6
+Time: 2055000, o_data: 866820daf00e041c582c62d433c25ba6, o_data_valid: 1
+Stopped at time : 2060 ns : File "D:/Code/verarecovery/src/serpent-bitslices/tb/serpent_encrypt_tob_tb.v" Line 61

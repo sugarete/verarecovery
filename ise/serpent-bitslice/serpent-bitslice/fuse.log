@@ -1,0 +1,33 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/Code/verarecovery/ise/serpent-bitslice/serpent-bitslice/serpent_encrypt_top_tb_isim_beh.exe" -prj "D:/Code/verarecovery/ise/serpent-bitslice/serpent-bitslice/serpent_encrypt_top_tb_beh.prj" "work.serpent_encrypt_top_tb" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/Code/verarecovery/ise/serpent-bitslice/serpent-bitslice/../../../src/serpent-bitslices/rtl/sboxes.v" into library work
+Analyzing Verilog file "D:/Code/verarecovery/ise/serpent-bitslice/serpent-bitslice/../../../src/serpent-bitslices/rtl/linear_transform.v" into library work
+Analyzing Verilog file "D:/Code/verarecovery/ise/serpent-bitslice/serpent-bitslice/../../../src/serpent-bitslices/rtl/serpent_encrypt_stage.v" into library work
+Analyzing Verilog file "D:/Code/verarecovery/ise/serpent-bitslice/serpent-bitslice/../../../src/serpent-bitslices/rtl/serpent_encrypt.v" into library work
+Analyzing Verilog file "D:/Code/verarecovery/ise/serpent-bitslice/serpent-bitslice/../../../src/serpent-bitslices/rtl/key_schedule.v" into library work
+Analyzing Verilog file "D:/Code/verarecovery/ise/serpent-bitslice/serpent-bitslice/../../../src/serpent-bitslices/rtl/key_mem.v" into library work
+Analyzing Verilog file "D:/Code/verarecovery/ise/serpent-bitslice/serpent-bitslice/../../../src/serpent-bitslices/rtl/serpent_encrypt_top.v" into library work
+Analyzing Verilog file "D:/Code/verarecovery/ise/serpent-bitslice/serpent-bitslice/../../../src/serpent-bitslices/tb/serpent_encrypt_tob_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "D:/Code/verarecovery/ise/serpent-bitslice/serpent-bitslice/../../../src/serpent-bitslices/rtl/key_schedule.v" Line 41: Port o_word_0 is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:/Code/verarecovery/ise/serpent-bitslice/serpent-bitslice/../../../src/serpent-bitslices/rtl/serpent_encrypt_stage.v" Line 22: Port o_data is not connected to this instance
+WARNING:HDLCompiler:189 - "D:/Code/verarecovery/ise/serpent-bitslice/serpent-bitslice/../../../src/serpent-bitslices/rtl/serpent_encrypt_stage.v" Line 27: Size mismatch in connection of port <i_sbox_index>. Formal port size is 3-bit while actual signal size is 32-bit.
+Completed static elaboration
+Compiling module key_mem
+Compiling module sboxes
+Compiling module key_schedule
+Compiling module linear_transform
+Compiling module serpent_encrypt_stage
+Compiling module serpent_encrypt
+Compiling module serpent_encrypt_top
+Compiling module serpent_encrypt_top_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 9 Verilog Units
+Built simulation executable D:/Code/verarecovery/ise/serpent-bitslice/serpent-bitslice/serpent_encrypt_top_tb_isim_beh.exe
+Fuse Memory Usage: 32672 KB
+Fuse CPU Usage: 343 ms

@@ -1,0 +1,51 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/Code/verarecovery/ise/pbkdf2-hmac-whirlpool/KDF/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to D:/Code/verarecovery/ise/pbkdf2-hmac-whirlpool/KDF/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../../../src/pbkdf2_hmac_whirlpool/rtl/whirlpool_wcipher_sbox.v" in library work
+Compiling verilog file "../../../src/pbkdf2_hmac_whirlpool/rtl/WHIRLPOOL_WCIPHER_THETA.v" in library work
+Module <WHIRLPOOL_WCIPHER_SBOX> compiled
+Compiling verilog file "../../../src/pbkdf2_hmac_whirlpool/rtl/WHIRLPOOL_WCIPHER_PI.v" in library work
+Module <WHIRLPOOL_WCIPHER_THETA> compiled
+Compiling verilog file "../../../src/pbkdf2_hmac_whirlpool/rtl/WHIRLPOOL_WCIPHER_GAMMA.v" in library work
+Module <WHIRLPOOL_WCIPHER_PI> compiled
+Compiling verilog file "../../../src/pbkdf2_hmac_whirlpool/rtl/WHIRLPOOL_WCIPHER_ROUND.v" in library work
+Module <WHIRLPOOL_WCIPHER_GAMMA> compiled
+Compiling verilog file "../../../src/pbkdf2_hmac_whirlpool/rtl/Whirlpool_hash.v" in library work
+Module <WHIRLPOOL_WCIPHER_ROUND> compiled
+Compiling verilog file "../../../src/pbkdf2_hmac_whirlpool/rtl/key_expansion.v" in library work
+Module <Whirlpool_hash> compiled
+Compiling verilog file "../../../src/pbkdf2_hmac_whirlpool/rtl/top_whirlpool_hash.v" in library work
+Module <key_expansion> compiled
+Module <top_whirlpool_hash> compiled
+No errors in compilation
+Analysis of file <"top_whirlpool_hash.prj"> succeeded.
+ 
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> 
+
+Total memory usage is 4477804 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -22,8 +22,8 @@ reg valid;
 
 reg [2:0] serpent_en_state;
 parameter IDLE          = 3'b000;
-parameter MIXKEY        = 3'b001;
-// parameter IP            = 3'b001;
+// parameter MIXKEY        = 3'b001;
+parameter IP            = 3'b001;
 parameter ROUND         = 3'b010;
 // parameter FP            = 3'b011;
 parameter MIX32         = 3'b100;
@@ -63,27 +63,24 @@ always @(posedge i_clk or negedge i_rstn) begin
             IDLE: begin
                 round <= 0;
                 if (i_en == 1'b1 && i_subkey_valid == 1'b1) begin
-                    serpent_en_state <= MIXKEY;
+                    serpent_en_state <= ROUND;
                 end
             end
             // IP: begin
             //     data_in <= initial_permutation_output;
             //     serpent_en_state <= ROUND;
             // end
-            MIXKEY: begin
+            ROUND: begin
                 if(round == 0) begin
                     data_in <= i_data ^ i_key;
+                    round <= round + 1;
+                    serpent_en_state <= ROUND;
+                end else if(round < 31) begin
+                    data_in <= data_out ^ i_key;
+                    round <= round + 1;
                     serpent_en_state <= ROUND;
                 end else begin
                     data_in <= data_out ^ i_key;
-                    serpent_en_state <= ROUND;
-                end
-            end
-            ROUND: begin
-                if(round < 31) begin
-                    round <= round + 1;
-                    serpent_en_state <= MIXKEY;
-                end else begin
                     round <= round + 1;
                     serpent_en_state <= MIX32;
                 end
@@ -105,8 +102,8 @@ end
 always @(*) begin
     case (serpent_en_state)
         IDLE:       displaystate_serpent_en = "IDLE";
-        // IP:         displaystate_serpent_en = "IP";
-        MIXKEY:     displaystate_serpent_en = "MIXKEY";
+        IP:         displaystate_serpent_en = "IP";
+        // MIXKEY:     displaystate_serpent_en = "MIXKEY";
         ROUND:      displaystate_serpent_en = "ROUND";
         // FP:         displaystate_serpent_en = "FP";
         MIX32:      displaystate_serpent_en = "MIX32";

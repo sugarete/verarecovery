@@ -28,7 +28,8 @@ module top_whirlpool_hash (
     input  wire [191:0] i_pass,
     output reg  [191:0] o_pass,
     output reg          o_key_valid,
-    output reg  [511:0] o_key
+    output reg  [511:0] o_key,
+	 output wire  [18:0]  o_loop
 );
   localparam IDLE = 0;
   localparam KEY_PADDING = 1;
@@ -55,7 +56,7 @@ module top_whirlpool_hash (
   wire [511:0] ipad;
   wire [511:0] opad;
   reg  [3 : 0] state;
-  reg  [9 : 0] c;
+  reg  [18 : 0] c;
   reg  [511:0] pass_in;
   reg  [511:0] digest;
   wire [511:0] key_out;
@@ -69,6 +70,8 @@ module top_whirlpool_hash (
         assign opad[((i*8)+8-1):(i*8)] = 8'h5c;
       end
   endgenerate
+  
+  assign o_loop = c;
 
   Whirlpool_hash Whirlpool_hash (
       .i_clk         (i_clk),
@@ -203,7 +206,7 @@ module top_whirlpool_hash (
         end
         KEY_OUT: begin
           o_key <= o_key ^ data_reg;
-          if (c == 1000) begin
+          if (c == 500000) begin
             o_key_valid <= 1;
             state <= IDLE;
           end else state <= HASH_IKEY_BLOCK_1_IN;

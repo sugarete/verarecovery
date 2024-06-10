@@ -17,10 +17,11 @@ master/spec/img/
 master/spec/diagram/*.*
 !master/spec/diagram/*.drawio
 
-/ise/pbkdf2-hmac-whirlpool
+# /ise/pbkdf2-hmac-whirlpool
 /ise/serpent
 /ise/serpent2
 /ise/passwordgen
 /ise/xts-serpent
 /references/serpent/serpent/floppy3
 /references/serpent/serpent/floppy5
+/ise/serpent-vhdl

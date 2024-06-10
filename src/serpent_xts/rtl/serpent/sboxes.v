@@ -4,6 +4,10 @@ module sboxes (
     input wire [31:0] i_word2,
     input wire [31:0] i_word3,
     input wire [2:0] i_Sbox_index,
+    output wire [31:0] o_word0,
+    output wire [31:0] o_word1,
+    output wire [31:0] o_word2,
+    output wire [31:0] o_word3,
     output wire [127:0] o_data
 );
 
@@ -47,6 +51,10 @@ module sboxes (
     endgenerate
 
     assign o_data = {w3_out, w2_out, w1_out, w0_out};
+    assign o_word0 = w0_out;
+    assign o_word1 = w1_out;
+    assign o_word2 = w2_out;
+    assign o_word3 = w3_out;
 
     // S-box definitions
     function [3:0] Sbox;

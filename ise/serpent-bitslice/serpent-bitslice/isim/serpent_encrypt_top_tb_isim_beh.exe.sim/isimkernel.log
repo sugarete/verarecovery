@@ -1,0 +1,10 @@
+Command line:
+   serpent_encrypt_top_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50097
+
+Sun Jun 09 16:29:49 2024
+
+
+ Elaboration Time: 0.046875 sec

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/Code/verarecovery/ise/serpent-bitslice/serpent-bitslice/serpent_encrypt_top_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="serpent_encrypt_top_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/serpent_encrypt_top_tb/o_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">o_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">o_data[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serpent_encrypt_top_tb/o_data_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">o_data_valid</obj_property>
+      <obj_property name="ObjectShortName">o_data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serpent_encrypt_top_tb/i_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i_clk</obj_property>
+      <obj_property name="ObjectShortName">i_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serpent_encrypt_top_tb/i_rstn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i_rstn</obj_property>
+      <obj_property name="ObjectShortName">i_rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serpent_encrypt_top_tb/i_master_key_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i_master_key_valid</obj_property>
+      <obj_property name="ObjectShortName">i_master_key_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serpent_encrypt_top_tb/i_enable_encrypt" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i_enable_encrypt</obj_property>
+      <obj_property name="ObjectShortName">i_enable_encrypt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serpent_encrypt_top_tb/i_key" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i_key[255:0]</obj_property>
+      <obj_property name="ObjectShortName">i_key[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serpent_encrypt_top_tb/i_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">i_data[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serpent_encrypt_top_tb/uut/serpent_encrypt_inst/o_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">o_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">o_data[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serpent_encrypt_top_tb/uut/serpent_encrypt_inst/word_0_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">word_0_out[127:0]</obj_property>
+      <obj_property name="ObjectShortName">word_0_out[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serpent_encrypt_top_tb/uut/serpent_encrypt_inst/word_3_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">word_3_in[127:0]</obj_property>
+      <obj_property name="ObjectShortName">word_3_in[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serpent_encrypt_top_tb/uut/serpent_encrypt_inst/word_2_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">word_2_in[127:0]</obj_property>
+      <obj_property name="ObjectShortName">word_2_in[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serpent_encrypt_top_tb/uut/serpent_encrypt_inst/word_1_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">word_1_in[127:0]</obj_property>
+      <obj_property name="ObjectShortName">word_1_in[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serpent_encrypt_top_tb/uut/serpent_encrypt_inst/word_0_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">word_0_in[127:0]</obj_property>
+      <obj_property name="ObjectShortName">word_0_in[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serpent_encrypt_top_tb/uut/serpent_encrypt_inst/word_3_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">word_3_out[127:0]</obj_property>
+      <obj_property name="ObjectShortName">word_3_out[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serpent_encrypt_top_tb/uut/serpent_encrypt_inst/word_2_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">word_2_out[127:0]</obj_property>
+      <obj_property name="ObjectShortName">word_2_out[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serpent_encrypt_top_tb/uut/serpent_encrypt_inst/word_1_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">word_1_out[127:0]</obj_property>
+      <obj_property name="ObjectShortName">word_1_out[127:0]</obj_property>
+   </wvobject>
+</wave_config>

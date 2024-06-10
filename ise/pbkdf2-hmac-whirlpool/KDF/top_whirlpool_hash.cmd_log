@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/Code/verarecovery/ise/pbkdf2-hmac-whirlpool/KDF/top_whirlpool_hash.xst" -ofn "D:/Code/verarecovery/ise/pbkdf2-hmac-whirlpool/KDF/top_whirlpool_hash.syr" 

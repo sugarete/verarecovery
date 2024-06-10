@@ -1,0 +1,7 @@
+MO sboxes NULL ../../../src/serpent-bitslices/rtl/sboxes.v vlg68/sboxes.bin 1717891252
+MO key_schedule NULL ../../../src/serpent-bitslices/rtl/key_schedule.v vlg69/key__schedule.bin 1717891252
+MO linear_transform NULL ../../../src/serpent-bitslices/rtl/linear_transform.v vlg5E/linear__transform.bin 1717891252
+MO serpent_encrypt_top NULL ../../../src/serpent-bitslices/rtl/serpent_encrypt_top.v vlg27/serpent__encrypt__top.bin 1717891252
+MO key_mem NULL ../../../src/serpent-bitslices/rtl/key_mem.v vlg03/key__mem.bin 1717891252
+MO serpent_encrypt NULL ../../../src/serpent-bitslices/rtl/serpent_encrypt.v vlg25/serpent__encrypt.bin 1717891252
+MO serpent_encrypt_stage NULL ../../../src/serpent-bitslices/rtl/serpent_encrypt_stage.v vlg40/serpent__encrypt__stage.bin 1717891252

@@ -16,6 +16,7 @@ module top_whirlpool_hash_tb;
   wire [191:0] o_pass;
   wire o_key_valid;
   wire [511:0] o_key;
+  wire [18:0] o_loop;
 
   // Instantiate the module under test
   top_whirlpool_hash uut (
@@ -27,7 +28,8 @@ module top_whirlpool_hash_tb;
       .i_pass(i_pass),
       .o_pass(o_pass),
       .o_key_valid(o_key_valid),
-      .o_key(o_key)
+      .o_key(o_key),
+		.o_loop(o_loop)
   );
 
   // Clock generation
@@ -65,7 +67,7 @@ module top_whirlpool_hash_tb;
 
   // Monitor signals
   initial begin
-    $monitor("Time: %0t, o_pass: %h, o_key_valid: %b, o_key: %h", $time, o_pass, o_key_valid, o_key);
+    $monitor("Time: %0t, o_pass: %h, o_key_valid: %b, o_key: %h ,loop: %d", $time, o_pass, o_key_valid, o_key, o_loop);
   end
 
 endmodule

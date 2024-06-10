@@ -1,0 +1,28 @@
+Command line:
+   serpent_encrypt_top_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  62658
+
+Sun Jun 09 15:54:08 2024
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5156.18 Meg
+
+ Total Signals          : 122
+ Total Nets             : 3154
+ Total Signal Drivers   : 438
+ Total Blocks           : 29
+ Total Primitive Blocks : 6
+ Total Processes        : 446
+ Total Traceable Variables  : 107
+ Total Scalar Nets and Variables : 13211
+
+ Total Simulation Time: 0.046875 sec
+
+ Current Memory Usage: 5156.18 Meg
+
+Sun Jun 09 15:54:15 2024
+

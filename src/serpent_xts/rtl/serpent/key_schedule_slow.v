@@ -14,12 +14,12 @@ reg [31:0] prekey [139:0];
 // word_round is a 8-bit register, use to store the current word round
 reg [7:0] word_round;
 // round is a 6-bit register, use to store the current round
-reg [5:0] round;
+reg [5:0] key_round;
 // key_valid is a 1-bit register, use to store the key valid signal, 1 means key is valid and ready to use
 reg key_valid;
 // Sbox input and index
-reg [31:0] word0, word1, word2, word3;
-reg [2:0] sbox_index;
+reg [31:0] key_word_0, key_word_1, key_word_2, key_word_3;
+reg [2:0] key_sbox_index;
 wire [127:0] sbox_output;
 
 integer i;
@@ -34,13 +34,19 @@ parameter WAIT          = 2'b11;
 reg [8*11-1:0] displaystate_key_schedule;
 //---------instances------------
 sboxes sboxes_inst (
-    .i_word0(word0),
-    .i_word1(word1),
-    .i_word2(word2),
-    .i_word3(word3),
-    .i_Sbox_index(sbox_index),
+    .i_word0(key_word_0),
+    .i_word1(key_word_1),
+    .i_word2(key_word_2),
+    .i_word3(key_word_3),
+    .i_Sbox_index(key_sbox_index),
     .o_data(o_subkey)
 );
+
+// // try to do the standard mode
+// initial_permutation initial_permutation_inst (
+//     .i_data(sbox_output),
+//     .o_data(o_subkey)
+// );
 
 //----------function------------
 function [31:0] ROL11;
@@ -51,7 +57,7 @@ function [31:0] ROL11;
 endfunction
 
 //---------assignment-----------
-assign o_address = round - 1;
+assign o_address = key_round - 1;
 assign o_subkey_valid = key_valid;
 
 //---------key schedule----------
@@ -60,7 +66,7 @@ always @(posedge i_clk or negedge i_rstn) begin
         for(i = 0; i < 140; i = i + 1) begin
             prekey[i] <= 0;
         end
-        round <= 0;
+        key_round <= 0;
         word_round <= 0;
         key_valid <= 0;
         key_schedule_state <= IDLE;
@@ -68,7 +74,7 @@ always @(posedge i_clk or negedge i_rstn) begin
         case (key_schedule_state)
             IDLE: begin
                 word_round <= 0;
-                round <= 0;
+                key_round <= 0;
                 if (i_begin) begin
                     key_valid <= 0;
                     prekey[0] <= i_key[31:0];
@@ -99,13 +105,13 @@ always @(posedge i_clk or negedge i_rstn) begin
                 end
             end
             KEY_GEN: begin
-                if(round < 33) begin                
-                    word0 <= prekey[8 + (round)*4 + 0];
-                    word1 <= prekey[8 + (round)*4 + 1];
-                    word2 <= prekey[8 + (round)*4 + 2];
-                    word3 <= prekey[8 + (round)*4 + 3];
-                    sbox_index <= (3 - round) % 8;
-                    round <= round + 1;
+                if(key_round < 33) begin                
+                    key_word_0 <= prekey[8 + (key_round)*4 + 0];
+                    key_word_1 <= prekey[8 + (key_round)*4 + 1];
+                    key_word_2 <= prekey[8 + (key_round)*4 + 2];
+                    key_word_3 <= prekey[8 + (key_round)*4 + 3];
+                    key_sbox_index <= (3 - key_round) % 8;
+                    key_round <= key_round + 1;
                 end else begin
                     key_valid <= 1;
                     key_schedule_state <= WAIT;

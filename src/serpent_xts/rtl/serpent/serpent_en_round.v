@@ -8,6 +8,7 @@ module serpent_en_round (
 //---------wires, registers----------
 // wire [127:0] out_mix_key;
 wire [127:0] out_sbox;
+wire [127:0] out_lt;
 
 //---------instances----------
 // key_mixing mix_key (
@@ -26,9 +27,10 @@ sboxes sbox (
 );
 
 linear_transform lt (
-    .i_round(i_round-1),
     .i_data(out_sbox),
-    .o_data(o_data)
+    .o_data(out_lt)
 );
+
+assign o_data = (i_round < 32) ? out_lt : out_sbox;
 
 endmodule

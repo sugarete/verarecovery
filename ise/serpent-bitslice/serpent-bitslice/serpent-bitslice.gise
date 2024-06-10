@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="serpent-bitslice.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="key_schedule.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="key_schedule.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="key_schedule.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="key_schedule_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="key_schedule_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="key_schedule_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="serpent_encrypt_top.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="serpent_encrypt_top.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="serpent_encrypt_top.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="serpent_encrypt_top_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="serpent_encrypt_top_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="serpent_encrypt_top_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="serpent_encrypt_top_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="serpent_encrypt_top_tb_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1717923291" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1717923291">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1717923291" xil_pn:in_ck="7329673115818620006" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1717923291">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../../../src/serpent-bitslices/rtl/key_mem.v"/>
+      <outfile xil_pn:name="../../../src/serpent-bitslices/rtl/key_schedule.v"/>
+      <outfile xil_pn:name="../../../src/serpent-bitslices/rtl/linear_transform.v"/>
+      <outfile xil_pn:name="../../../src/serpent-bitslices/rtl/sboxes.v"/>
+      <outfile xil_pn:name="../../../src/serpent-bitslices/rtl/serpent_encrypt.v"/>
+      <outfile xil_pn:name="../../../src/serpent-bitslices/rtl/serpent_encrypt_stage.v"/>
+      <outfile xil_pn:name="../../../src/serpent-bitslices/rtl/serpent_encrypt_top.v"/>
+      <outfile xil_pn:name="../../../src/serpent-bitslices/tb/key_schedule_tb.v"/>
+      <outfile xil_pn:name="../../../src/serpent-bitslices/tb/serpent_encrypt_tob_tb.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1717923291" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-634730428171996029" xil_pn:start_ts="1717923291">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1717923291" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-1509335395239290309" xil_pn:start_ts="1717923291">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1717923291" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="19567165467969270" xil_pn:start_ts="1717923291">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1717923291" xil_pn:in_ck="7329673115818620006" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1717923291">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../../../src/serpent-bitslices/rtl/key_mem.v"/>
+      <outfile xil_pn:name="../../../src/serpent-bitslices/rtl/key_schedule.v"/>
+      <outfile xil_pn:name="../../../src/serpent-bitslices/rtl/linear_transform.v"/>
+      <outfile xil_pn:name="../../../src/serpent-bitslices/rtl/sboxes.v"/>
+      <outfile xil_pn:name="../../../src/serpent-bitslices/rtl/serpent_encrypt.v"/>
+      <outfile xil_pn:name="../../../src/serpent-bitslices/rtl/serpent_encrypt_stage.v"/>
+      <outfile xil_pn:name="../../../src/serpent-bitslices/rtl/serpent_encrypt_top.v"/>
+      <outfile xil_pn:name="../../../src/serpent-bitslices/tb/key_schedule_tb.v"/>
+      <outfile xil_pn:name="../../../src/serpent-bitslices/tb/serpent_encrypt_tob_tb.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1717923294" xil_pn:in_ck="7329673115818620006" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8725904668286068702" xil_pn:start_ts="1717923291">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="serpent_encrypt_top_tb_beh.prj"/>
+      <outfile xil_pn:name="serpent_encrypt_top_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1717923294" xil_pn:in_ck="8845200527773326234" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="7124916321069440377" xil_pn:start_ts="1717923294">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="serpent_encrypt_top_tb_isim_beh.wdb"/>
+    </transform>
+  </transforms>
+
+</generated_project>

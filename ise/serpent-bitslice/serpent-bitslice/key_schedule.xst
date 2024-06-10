@@ -1,0 +1,5 @@
+set -tmpdir "D:/Code/verarecovery/ise/serpent-bitslice/serpent-bitslice/xst/projnav.tmp"
+set -xsthdpdir "D:/Code/verarecovery/ise/serpent-bitslice/serpent-bitslice/xst"
+elaborate
+-ifn key_schedule.prj
+-ifmt mixed

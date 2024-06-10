@@ -10,22 +10,19 @@ module key_mem (
 
 integer i;
 reg [127:0] mem [32:0];
-reg [127:0] key_out;
 
-assign o_key = key_out;
-
-always @(posedge i_clk or negedge i_rstn)
-begin
-    if (!i_rstn) begin
-        for (i = 0; i < 32; i = i + 1)
+always @(posedge i_clk or negedge i_rstn) begin
+    if (~i_rstn) begin
+        for (i = 0; i < 32; i = i + 1) begin
             mem[i] <= 128'b0;
-    end
-    else begin
-        if (i_write_en)
+        end
+    end else begin
+        if (i_write_en) begin
             mem[i_addr] <= i_key;
-        if (i_read_en)
-            key_out <= mem[i_addr];
+        end
     end
 end
-    
+
+assign o_key = (i_read_en) ? mem[i_addr] : 128'b0;
+
 endmodule

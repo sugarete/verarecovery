@@ -1,0 +1,3 @@
+verilog work "../../../src/serpent-bitslices/rtl/serpent_encrypt_stage.v"
+verilog work "../../../src/serpent-bitslices/rtl/serpent_encrypt.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
