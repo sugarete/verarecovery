@@ -26,10 +26,11 @@ module top_whirlpool_hash (
     input  wire         i_ena_hash,
     input  wire [511:0] i_salt,
     input  wire [191:0] i_pass,
+    input  wire [8:0]   i_pim,
     output reg  [191:0] o_pass,
     output reg          o_key_valid,
     output reg  [511:0] o_key,
-	 output wire  [18:0]  o_loop
+	 output wire  [19:0]  o_loop
 );
   localparam IDLE = 0;
   localparam KEY_PADDING = 1;
@@ -55,8 +56,9 @@ module top_whirlpool_hash (
   reg  [511:0] okey_pad;
   wire [511:0] ipad;
   wire [511:0] opad;
-  reg  [3 : 0] state;
-  reg  [18 : 0] c;
+  reg  [3:0] state;
+  reg  [19:0] c;
+  reg  [19:0] total_loop;
   reg  [511:0] pass_in;
   reg  [511:0] digest;
   wire [511:0] key_out;
@@ -116,6 +118,7 @@ module top_whirlpool_hash (
       case (state)
         IDLE: begin
           c <= 0;
+          total_loop <= 15000 + i_pim * 1000;
           round <= 0;
           digest_valid <= 0;
           key <= 512'b0;
@@ -206,7 +209,7 @@ module top_whirlpool_hash (
         end
         KEY_OUT: begin
           o_key <= o_key ^ data_reg;
-          if (c == 500000) begin
+          if (c == total_loop) begin
             o_key_valid <= 1;
             state <= IDLE;
           end else state <= HASH_IKEY_BLOCK_1_IN;

@@ -1,7 +1,0 @@
-verilog work "../../../src/serpent-bitslices/rtl/sboxes.v"
-verilog work "../../../src/serpent-bitslices/rtl/linear_transform.v"
-verilog work "../../../src/serpent-bitslices/rtl/serpent_encrypt_stage.v"
-verilog work "../../../src/serpent-bitslices/rtl/serpent_encrypt.v"
-verilog work "../../../src/serpent-bitslices/rtl/key_schedule.v"
-verilog work "../../../src/serpent-bitslices/rtl/key_mem.v"
-verilog work "../../../src/serpent-bitslices/rtl/serpent_encrypt_top.v"

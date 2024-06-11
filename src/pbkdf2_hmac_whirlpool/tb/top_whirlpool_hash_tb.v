@@ -59,15 +59,15 @@ module top_whirlpool_hash_tb;
     wait (o_key_valid);
 
     // Monitor the output key
-    $display("Output Key: %h", o_key);
+    // $display("Output Key: %h", o_key);
 
     // Finish simulation
     #100 $finish;
   end
 
   // Monitor signals
-  initial begin
-    $monitor("Time: %0t, o_pass: %h, o_key_valid: %b, o_key: %h ,loop: %d", $time, o_pass, o_key_valid, o_key, o_loop);
-  end
+  // initial begin
+  //  $monitor("Time: %0t, o_pass: %h, o_key_valid: %b, o_key: %h ,loop: %d", $time, o_pass, o_key_valid, o_key, o_loop);
+  // end
 
 endmodule

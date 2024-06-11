@@ -1,5 +1,0 @@
-set -tmpdir "D:/Code/verarecovery/ise/pbkdf2-hmac-whirlpool/KDF/xst/projnav.tmp"
-set -xsthdpdir "D:/Code/verarecovery/ise/pbkdf2-hmac-whirlpool/KDF/xst"
-elaborate
--ifn top_whirlpool_hash.prj
--ifmt mixed

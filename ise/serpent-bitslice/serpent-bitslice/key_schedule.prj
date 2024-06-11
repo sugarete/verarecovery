@@ -1,2 +1,0 @@
-verilog work "../../../src/serpent-bitslices/rtl/sboxes.v"
-verilog work "../../../src/serpent-bitslices/rtl/key_schedule.v"

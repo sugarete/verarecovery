@@ -1,5 +1,0 @@
-set -tmpdir "D:/Code/verarecovery/ise/serpent-bitslice/serpent-bitslice/xst/projnav.tmp"
-set -xsthdpdir "D:/Code/verarecovery/ise/serpent-bitslice/serpent-bitslice/xst"
-elaborate
--ifn serpent_encrypt_top.prj
--ifmt mixed

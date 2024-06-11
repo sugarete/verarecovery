@@ -86,14 +86,6 @@ always @(posedge i_clk or negedge i_rstn) begin
                     word[5] <= i_key[191:160];
                     word[6] <= i_key[223:192];
                     word[7] <= i_key[255:224];
-                    // key_word[0] <= i_key[255:224];
-                    // key_word[1] <= i_key[223:192];
-                    // key_word[2] <= i_key[191:160];
-                    // key_word[3] <= i_key[159:128];
-                    // key_word[4] <= i_key[127:96];
-                    // key_word[5] <= i_key[95:64];
-                    // key_word[6] <= i_key[63:32];
-                    // key_word[7] <= i_key[31:0];                
                     key_schedule_state <= WORD_EXPAND;
                 end
             end

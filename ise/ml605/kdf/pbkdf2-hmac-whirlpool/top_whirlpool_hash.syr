@@ -1,0 +1,1327 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: top_whirlpool_hash.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top_whirlpool_hash.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top_whirlpool_hash"
+Output Format                      : NGC
+Target Device                      : xc6vlx75t-1-ff484
+
+---- Source Options
+Top Module Name                    : top_whirlpool_hash
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\Code\verarecovery\src\pbkdf2_hmac_whirlpool\rtl\whirlpool_wcipher_sbox.v" into library work
+Parsing module <WHIRLPOOL_WCIPHER_SBOX>.
+Analyzing Verilog file "D:\Code\verarecovery\src\pbkdf2_hmac_whirlpool\rtl\WHIRLPOOL_WCIPHER_THETA.v" into library work
+Parsing module <WHIRLPOOL_WCIPHER_THETA>.
+Analyzing Verilog file "D:\Code\verarecovery\src\pbkdf2_hmac_whirlpool\rtl\WHIRLPOOL_WCIPHER_PI.v" into library work
+Parsing module <WHIRLPOOL_WCIPHER_PI>.
+Analyzing Verilog file "D:\Code\verarecovery\src\pbkdf2_hmac_whirlpool\rtl\WHIRLPOOL_WCIPHER_GAMMA.v" into library work
+Parsing module <WHIRLPOOL_WCIPHER_GAMMA>.
+Analyzing Verilog file "D:\Code\verarecovery\src\pbkdf2_hmac_whirlpool\rtl\WHIRLPOOL_WCIPHER_ROUND.v" into library work
+Parsing module <WHIRLPOOL_WCIPHER_ROUND>.
+Analyzing Verilog file "D:\Code\verarecovery\src\pbkdf2_hmac_whirlpool\rtl\Whirlpool_hash.v" into library work
+Parsing module <Whirlpool_hash>.
+Analyzing Verilog file "D:\Code\verarecovery\src\pbkdf2_hmac_whirlpool\rtl\key_expansion.v" into library work
+Parsing module <key_expansion>.
+Analyzing Verilog file "D:\Code\verarecovery\src\pbkdf2_hmac_whirlpool\rtl\top_whirlpool_hash.v" into library work
+Parsing module <top_whirlpool_hash>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <top_whirlpool_hash>.
+
+Elaborating module <Whirlpool_hash>.
+
+Elaborating module <WHIRLPOOL_WCIPHER_ROUND>.
+
+Elaborating module <WHIRLPOOL_WCIPHER_GAMMA>.
+
+Elaborating module <WHIRLPOOL_WCIPHER_SBOX>.
+
+Elaborating module <WHIRLPOOL_WCIPHER_PI>.
+
+Elaborating module <WHIRLPOOL_WCIPHER_THETA>.
+WARNING:HDLCompiler:413 - "D:\Code\verarecovery\src\pbkdf2_hmac_whirlpool\rtl\Whirlpool_hash.v" Line 59: Result of 6-bit expression is truncated to fit in 5-bit target.
+
+Elaborating module <key_expansion>.
+WARNING:HDLCompiler:413 - "D:\Code\verarecovery\src\pbkdf2_hmac_whirlpool\rtl\key_expansion.v" Line 82: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:1127 - "D:\Code\verarecovery\src\pbkdf2_hmac_whirlpool\rtl\key_expansion.v" Line 55: Assignment to data_reg ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\Code\verarecovery\src\pbkdf2_hmac_whirlpool\rtl\top_whirlpool_hash.v" Line 205: Result of 21-bit expression is truncated to fit in 20-bit target.
+WARNING:HDLCompiler:1127 - "D:\Code\verarecovery\src\pbkdf2_hmac_whirlpool\rtl\top_whirlpool_hash.v" Line 99: Assignment to digest_valid ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top_whirlpool_hash>.
+    Related source file is "D:\Code\verarecovery\src\pbkdf2_hmac_whirlpool\rtl\top_whirlpool_hash.v".
+    Found 1-bit register for signal <pass_in<511>>.
+    Found 1-bit register for signal <pass_in<510>>.
+    Found 1-bit register for signal <pass_in<509>>.
+    Found 1-bit register for signal <pass_in<508>>.
+    Found 1-bit register for signal <pass_in<507>>.
+    Found 1-bit register for signal <pass_in<506>>.
+    Found 1-bit register for signal <pass_in<505>>.
+    Found 1-bit register for signal <pass_in<504>>.
+    Found 1-bit register for signal <pass_in<503>>.
+    Found 1-bit register for signal <pass_in<502>>.
+    Found 1-bit register for signal <pass_in<501>>.
+    Found 1-bit register for signal <pass_in<500>>.
+    Found 1-bit register for signal <pass_in<499>>.
+    Found 1-bit register for signal <pass_in<498>>.
+    Found 1-bit register for signal <pass_in<497>>.
+    Found 1-bit register for signal <pass_in<496>>.
+    Found 1-bit register for signal <pass_in<495>>.
+    Found 1-bit register for signal <pass_in<494>>.
+    Found 1-bit register for signal <pass_in<493>>.
+    Found 1-bit register for signal <pass_in<492>>.
+    Found 1-bit register for signal <pass_in<491>>.
+    Found 1-bit register for signal <pass_in<490>>.
+    Found 1-bit register for signal <pass_in<489>>.
+    Found 1-bit register for signal <pass_in<488>>.
+    Found 1-bit register for signal <pass_in<487>>.
+    Found 1-bit register for signal <pass_in<486>>.
+    Found 1-bit register for signal <pass_in<485>>.
+    Found 1-bit register for signal <pass_in<484>>.
+    Found 1-bit register for signal <pass_in<483>>.
+    Found 1-bit register for signal <pass_in<482>>.
+    Found 1-bit register for signal <pass_in<481>>.
+    Found 1-bit register for signal <pass_in<480>>.
+    Found 1-bit register for signal <pass_in<479>>.
+    Found 1-bit register for signal <pass_in<478>>.
+    Found 1-bit register for signal <pass_in<477>>.
+    Found 1-bit register for signal <pass_in<476>>.
+    Found 1-bit register for signal <pass_in<475>>.
+    Found 1-bit register for signal <pass_in<474>>.
+    Found 1-bit register for signal <pass_in<473>>.
+    Found 1-bit register for signal <pass_in<472>>.
+    Found 1-bit register for signal <pass_in<471>>.
+    Found 1-bit register for signal <pass_in<470>>.
+    Found 1-bit register for signal <pass_in<469>>.
+    Found 1-bit register for signal <pass_in<468>>.
+    Found 1-bit register for signal <pass_in<467>>.
+    Found 1-bit register for signal <pass_in<466>>.
+    Found 1-bit register for signal <pass_in<465>>.
+    Found 1-bit register for signal <pass_in<464>>.
+    Found 1-bit register for signal <pass_in<463>>.
+    Found 1-bit register for signal <pass_in<462>>.
+    Found 1-bit register for signal <pass_in<461>>.
+    Found 1-bit register for signal <pass_in<460>>.
+    Found 1-bit register for signal <pass_in<459>>.
+    Found 1-bit register for signal <pass_in<458>>.
+    Found 1-bit register for signal <pass_in<457>>.
+    Found 1-bit register for signal <pass_in<456>>.
+    Found 1-bit register for signal <pass_in<455>>.
+    Found 1-bit register for signal <pass_in<454>>.
+    Found 1-bit register for signal <pass_in<453>>.
+    Found 1-bit register for signal <pass_in<452>>.
+    Found 1-bit register for signal <pass_in<451>>.
+    Found 1-bit register for signal <pass_in<450>>.
+    Found 1-bit register for signal <pass_in<449>>.
+    Found 1-bit register for signal <pass_in<448>>.
+    Found 1-bit register for signal <pass_in<447>>.
+    Found 1-bit register for signal <pass_in<446>>.
+    Found 1-bit register for signal <pass_in<445>>.
+    Found 1-bit register for signal <pass_in<444>>.
+    Found 1-bit register for signal <pass_in<443>>.
+    Found 1-bit register for signal <pass_in<442>>.
+    Found 1-bit register for signal <pass_in<441>>.
+    Found 1-bit register for signal <pass_in<440>>.
+    Found 1-bit register for signal <pass_in<439>>.
+    Found 1-bit register for signal <pass_in<438>>.
+    Found 1-bit register for signal <pass_in<437>>.
+    Found 1-bit register for signal <pass_in<436>>.
+    Found 1-bit register for signal <pass_in<435>>.
+    Found 1-bit register for signal <pass_in<434>>.
+    Found 1-bit register for signal <pass_in<433>>.
+    Found 1-bit register for signal <pass_in<432>>.
+    Found 1-bit register for signal <pass_in<431>>.
+    Found 1-bit register for signal <pass_in<430>>.
+    Found 1-bit register for signal <pass_in<429>>.
+    Found 1-bit register for signal <pass_in<428>>.
+    Found 1-bit register for signal <pass_in<427>>.
+    Found 1-bit register for signal <pass_in<426>>.
+    Found 1-bit register for signal <pass_in<425>>.
+    Found 1-bit register for signal <pass_in<424>>.
+    Found 1-bit register for signal <pass_in<423>>.
+    Found 1-bit register for signal <pass_in<422>>.
+    Found 1-bit register for signal <pass_in<421>>.
+    Found 1-bit register for signal <pass_in<420>>.
+    Found 1-bit register for signal <pass_in<419>>.
+    Found 1-bit register for signal <pass_in<418>>.
+    Found 1-bit register for signal <pass_in<417>>.
+    Found 1-bit register for signal <pass_in<416>>.
+    Found 1-bit register for signal <round>.
+    Found 1-bit register for signal <o_key_valid>.
+    Found 1-bit register for signal <init>.
+    Found 512-bit register for signal <data_reg>.
+    Found 512-bit register for signal <ikey_pad>.
+    Found 512-bit register for signal <okey_pad>.
+    Found 512-bit register for signal <data>.
+    Found 512-bit register for signal <key>.
+    Found 512-bit register for signal <o_key>.
+    Found 20-bit register for signal <o_loop>.
+    Found 4-bit register for signal <state>.
+    Found 20-bit register for signal <total_loop>.
+    Found 192-bit register for signal <o_pass>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 11                                             |
+    | Transitions        | 20                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 5                                              |
+    | Clock              | i_clk (rising_edge)                            |
+    | Reset              | i_rstn (negative)                              |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 20-bit adder for signal <n0822> created at line 121.
+    Found 20-bit adder for signal <c[19]_GND_1_o_add_152_OUT> created at line 205.
+    Found 9x10-bit multiplier for signal <i_pim[8]_PWR_1_o_MuLt_129_OUT> created at line 121.
+    Found 20-bit comparator equal for signal <c[19]_total_loop[19]_equal_158_o> created at line 212
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred 3402 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <top_whirlpool_hash> synthesized.
+
+Synthesizing Unit <Whirlpool_hash>.
+    Related source file is "D:\Code\verarecovery\src\pbkdf2_hmac_whirlpool\rtl\Whirlpool_hash.v".
+    Found 1-bit register for signal <hash_valid>.
+    Found 1-bit register for signal <whirlpool_state>.
+    Found 5-bit register for signal <round>.
+    Found 512-bit register for signal <hash_out_reg_0>.
+    Found 512-bit register for signal <data>.
+    Found 512-bit register for signal <hash_out_reg_1>.
+    Found 5-bit adder for signal <round[4]_GND_2_o_add_5_OUT> created at line 59.
+    Found 5-bit comparator greater for signal <round[4]_GND_2_o_LessThan_4_o> created at line 56
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 1543 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <Whirlpool_hash> synthesized.
+
+Synthesizing Unit <WHIRLPOOL_WCIPHER_ROUND>.
+    Related source file is "D:\Code\verarecovery\src\pbkdf2_hmac_whirlpool\rtl\WHIRLPOOL_WCIPHER_ROUND.v".
+    Summary:
+	no macro.
+Unit <WHIRLPOOL_WCIPHER_ROUND> synthesized.
+
+Synthesizing Unit <WHIRLPOOL_WCIPHER_GAMMA>.
+    Related source file is "D:\Code\verarecovery\src\pbkdf2_hmac_whirlpool\rtl\WHIRLPOOL_WCIPHER_GAMMA.v".
+    Summary:
+	no macro.
+Unit <WHIRLPOOL_WCIPHER_GAMMA> synthesized.
+
+Synthesizing Unit <WHIRLPOOL_WCIPHER_SBOX>.
+    Related source file is "D:\Code\verarecovery\src\pbkdf2_hmac_whirlpool\rtl\whirlpool_wcipher_sbox.v".
+    Found 16x4-bit Read Only RAM for signal <_n0044[0:3]>
+    Found 16x4-bit Read Only RAM for signal <_n0061[0:3]>
+    Summary:
+	inferred   2 RAM(s).
+Unit <WHIRLPOOL_WCIPHER_SBOX> synthesized.
+
+Synthesizing Unit <WHIRLPOOL_WCIPHER_PI>.
+    Related source file is "D:\Code\verarecovery\src\pbkdf2_hmac_whirlpool\rtl\WHIRLPOOL_WCIPHER_PI.v".
+    Summary:
+	no macro.
+Unit <WHIRLPOOL_WCIPHER_PI> synthesized.
+
+Synthesizing Unit <WHIRLPOOL_WCIPHER_THETA>.
+    Related source file is "D:\Code\verarecovery\src\pbkdf2_hmac_whirlpool\rtl\WHIRLPOOL_WCIPHER_THETA.v".
+    Summary:
+	inferred 192 Multiplexer(s).
+Unit <WHIRLPOOL_WCIPHER_THETA> synthesized.
+
+Synthesizing Unit <key_expansion>.
+    Related source file is "D:\Code\verarecovery\src\pbkdf2_hmac_whirlpool\rtl\key_expansion.v".
+    Found 1-bit register for signal <key_valid>.
+    Found 512-bit register for signal <data_out>.
+    Found 512-bit register for signal <data_in>.
+    Found 4-bit register for signal <round>.
+    Found 8-bit register for signal <state>.
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | i_clk (rising_edge)                            |
+    | Reset              | i_rstn (negative)                              |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00000000                                       |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit adder for signal <round[3]_GND_8_o_add_6_OUT> created at line 82.
+    Found 16x64-bit Read Only RAM for signal <_n0229>
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<63>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<62>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<61>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<60>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<59>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<58>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<57>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<56>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<55>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<54>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<53>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<52>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<51>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<50>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<49>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<48>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<47>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<46>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<45>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<44>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<43>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<42>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<41>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<40>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<39>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<38>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<37>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<36>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<35>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<34>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<33>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<32>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <new_sboxw<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred 1029 D-type flip-flop(s).
+	inferred  63 Latch(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <key_expansion> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 257
+ 16x4-bit single-port Read Only RAM                    : 256
+ 16x64-bit single-port Read Only RAM                   : 1
+# Multipliers                                          : 1
+ 10x9-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 4
+ 20-bit adder                                          : 2
+ 4-bit adder                                           : 1
+ 5-bit adder                                           : 1
+# Registers                                            : 117
+ 1-bit register                                        : 101
+ 192-bit register                                      : 1
+ 20-bit register                                       : 2
+ 4-bit register                                        : 1
+ 5-bit register                                        : 1
+ 512-bit register                                      : 11
+# Latches                                              : 63
+ 1-bit latch                                           : 63
+# Comparators                                          : 2
+ 20-bit comparator equal                               : 1
+ 5-bit comparator greater                              : 1
+# Multiplexers                                         : 391
+ 1-bit 2-to-1 multiplexer                              : 4
+ 20-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 384
+# FSMs                                                 : 2
+# Xors                                                 : 2087
+ 1-bit xor2                                            : 1536
+ 512-bit xor2                                          : 7
+ 8-bit xor2                                            : 384
+ 8-bit xor4                                            : 32
+ 8-bit xor7                                            : 128
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <WHIRLPOOL_WCIPHER_SBOX>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0061[0:3]> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 4-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <h>             |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0044[0:3]> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 4-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <g>             |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <WHIRLPOOL_WCIPHER_SBOX> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Whirlpool_hash>.
+The following registers are absorbed into counter <round>: 1 register on signal <round>.
+Unit <Whirlpool_hash> synthesized (advanced).
+
+Synthesizing (advanced) Unit <key_expansion>.
+The following registers are absorbed into counter <round>: 1 register on signal <round>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0229> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 64-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <round>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <key_expansion> synthesized (advanced).
+
+Synthesizing (advanced) Unit <top_whirlpool_hash>.
+The following registers are absorbed into counter <c>: 1 register on signal <c>.
+	Multiplier <Mmult_i_pim[8]_PWR_1_o_MuLt_129_OUT> in block <top_whirlpool_hash> and adder/subtractor <Madd_n0822> in block <top_whirlpool_hash> are combined into a MAC<Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT>.
+	The following registers are also absorbed by the MAC: <total_loop> in block <top_whirlpool_hash>.
+Unit <top_whirlpool_hash> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 257
+ 16x4-bit single-port distributed Read Only RAM        : 256
+ 16x64-bit single-port distributed Read Only RAM       : 1
+# MACs                                                 : 1
+ 10x9-to-20-bit MAC                                    : 1
+# Counters                                             : 3
+ 20-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 5925
+ Flip-Flops                                            : 5925
+# Comparators                                          : 2
+ 20-bit comparator equal                               : 1
+ 5-bit comparator greater                              : 1
+# Multiplexers                                         : 387
+ 1-bit 2-to-1 multiplexer                              : 3
+ 8-bit 2-to-1 multiplexer                              : 384
+# FSMs                                                 : 2
+# Xors                                                 : 2087
+ 1-bit xor2                                            : 1536
+ 512-bit xor2                                          : 7
+ 8-bit xor2                                            : 384
+ 8-bit xor4                                            : 32
+ 8-bit xor7                                            : 128
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0001
+ 0010  | 0010
+ 0011  | 0011
+ 0100  | 0100
+ 0110  | 0110
+ 0111  | 0111
+ 1000  | 1000
+ 1001  | 1001
+ 1010  | 1010
+ 1011  | 1011
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <key_expansion/FSM_1> on signal <state[1:2]> with sequential encoding.
+----------------------
+ State    | Encoding
+----------------------
+ 00000000 | 00
+ 00000001 | 01
+ 00000010 | 10
+----------------------
+WARNING:Xst:1710 - FF/Latch <okey_pad_153> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_152> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_151> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_149> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_145> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_144> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_143> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_141> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_137> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_136> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_135> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_133> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_129> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_128> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_127> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_125> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_121> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_120> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_119> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_117> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_113> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_112> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_111> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_109> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_105> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_104> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_207> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_205> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_201> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_200> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_199> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_197> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_193> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_192> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_191> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_189> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_185> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_184> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_183> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_181> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_177> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_176> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_175> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_173> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_169> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_168> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_167> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_165> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_161> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_160> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_159> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_157> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_49> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_48> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_47> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_45> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_41> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_40> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_39> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_37> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_33> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_32> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_31> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_29> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_25> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_24> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_23> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_21> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_17> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_16> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_15> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_13> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_9> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_8> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_7> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_5> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_1> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_0> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_103> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_101> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_97> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_96> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_95> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_93> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_89> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_88> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_87> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_85> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_81> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_80> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_79> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_77> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_73> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_72> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_71> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_69> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_65> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_64> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_63> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_61> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_57> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_56> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_55> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_53> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_361> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_360> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_359> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_357> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_353> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_352> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_351> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_349> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_345> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_344> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_343> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_341> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_337> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_336> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_335> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_333> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_329> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_328> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_327> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_325> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_321> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_320> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_319> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_317> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_313> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_312> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_415> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_413> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_409> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_408> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_407> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_405> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_401> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_400> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_399> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_397> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_393> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_392> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_391> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_389> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_385> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_384> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_383> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_381> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_377> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_376> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_375> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_373> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_369> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_368> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_367> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_365> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_257> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_256> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_255> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_253> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_249> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_248> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_247> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_245> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_241> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_240> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_239> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_237> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_233> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_232> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_231> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_229> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_225> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_224> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_223> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_221> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_217> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_216> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_215> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_213> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_209> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_208> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_311> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_309> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_305> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_304> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_303> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_301> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_297> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_296> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_295> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_293> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_289> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_288> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_287> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_285> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_281> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_280> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_279> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_277> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_273> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_272> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_271> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_269> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_265> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_264> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_263> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <okey_pad_261> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_155> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_152> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_151> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_150> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_147> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_144> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_143> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_142> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_139> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_136> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_135> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_134> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_131> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_128> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_127> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_126> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_123> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_120> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_119> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_118> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_115> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_112> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_111> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_110> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_107> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_104> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_207> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_206> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_203> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_200> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_199> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_198> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_195> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_192> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_191> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_190> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_187> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_184> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_183> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_182> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_179> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_176> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_175> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_174> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_171> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_168> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_167> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_166> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_163> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_160> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_159> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_158> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_51> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_48> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_47> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_46> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_43> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_40> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_39> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_38> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_35> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_32> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_31> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_30> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_27> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_24> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_23> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_22> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_19> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_16> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_15> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_14> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_11> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_8> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_7> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_6> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_3> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_0> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_103> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_102> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_99> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_96> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_95> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_94> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_91> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_88> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_87> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_86> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_83> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_80> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_79> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_78> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_75> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_72> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_71> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_70> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_67> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_64> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_63> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_62> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_59> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_56> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_55> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_54> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_363> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_360> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_359> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_358> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_355> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_352> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_351> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_350> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_347> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_344> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_343> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_342> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_339> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_336> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_335> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_334> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_331> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_328> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_327> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_326> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_323> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_320> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_319> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_318> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_315> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_312> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_415> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_414> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_411> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_408> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_407> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_406> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_403> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_400> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_399> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_398> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_395> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_392> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_391> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_390> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_387> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_384> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_383> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_382> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_379> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_376> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_375> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_374> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_371> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_368> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_367> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_366> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_259> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_256> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_255> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_254> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_251> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_248> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_247> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_246> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_243> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_240> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_239> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_238> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_235> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_232> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_231> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_230> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_227> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_224> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_223> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_222> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_219> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_216> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_215> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_214> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_211> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_208> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_311> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_310> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_307> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_304> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_303> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_302> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_299> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_296> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_295> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_294> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_291> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_288> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_287> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_286> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_283> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_280> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_279> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_278> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_275> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_272> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_271> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_270> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_267> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_264> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_263> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ikey_pad_262> (without init value) has a constant value of 0 in block <top_whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <ikey_pad_480> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_480> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_479> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_479> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_487> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_487> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_488> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_488> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_495> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_495> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_496> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_496> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_420> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_420> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_418> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_418> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_426> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_426> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_428> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_428> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_434> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_434> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_436> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_436> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_442> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_442> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_444> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_444> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_450> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_450> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_500> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_500> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_452> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_452> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_460> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_460> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_506> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_506> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_458> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_458> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_508> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_508> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_466> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_466> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_416> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_416> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_468> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_468> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_474> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_474> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_423> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_423> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_424> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_424> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_476> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_476> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_482> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_482> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_431> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_431> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_432> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_432> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_484> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_484> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_490> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_490> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_440> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_440> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_492> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_492> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_439> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_439> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_498> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_498> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_447> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_447> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_448> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_448> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_503> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_503> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_504> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_504> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_455> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_455> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_1> in Unit <top_whirlpool_hash> is equivalent to the following 415 FFs/Latches, which will be removed : <ikey_pad_2> <ikey_pad_4> <ikey_pad_5> <ikey_pad_9> <ikey_pad_10> <ikey_pad_12> <ikey_pad_13> <ikey_pad_17> <ikey_pad_18> <ikey_pad_20> <ikey_pad_21> <ikey_pad_25> <ikey_pad_26> <ikey_pad_28> <ikey_pad_29> <ikey_pad_33> <ikey_pad_34> <ikey_pad_36> <ikey_pad_37> <ikey_pad_41> <ikey_pad_42> <ikey_pad_44> <ikey_pad_45> <ikey_pad_49> <ikey_pad_50> <ikey_pad_52> <ikey_pad_53> <ikey_pad_57> <ikey_pad_58> <ikey_pad_60> <ikey_pad_61> <ikey_pad_65> <ikey_pad_66> <ikey_pad_68> <ikey_pad_69> <ikey_pad_73> <ikey_pad_74> <ikey_pad_76> <ikey_pad_77> <ikey_pad_81> <ikey_pad_82> <ikey_pad_84> <ikey_pad_85> <ikey_pad_89> <ikey_pad_90> <ikey_pad_92> <ikey_pad_93> <ikey_pad_97> <ikey_pad_98> <ikey_pad_100> <ikey_pad_101> <ikey_pad_105> <ikey_pad_106> <ikey_pad_108> <ikey_pad_109> <ikey_pad_113> <ikey_pad_114> <ikey_pad_116> <ikey_pad_117> <ikey_pad_121> <ikey_pad_122> <ikey_pad_124>
+   <ikey_pad_125> <ikey_pad_129> <ikey_pad_130> <ikey_pad_132> <ikey_pad_133> <ikey_pad_137> <ikey_pad_138> <ikey_pad_140> <ikey_pad_141> <ikey_pad_145> <ikey_pad_146> <ikey_pad_148> <ikey_pad_149> <ikey_pad_153> <ikey_pad_154> <ikey_pad_156> <ikey_pad_157> <ikey_pad_161> <ikey_pad_162> <ikey_pad_164> <ikey_pad_165> <ikey_pad_169> <ikey_pad_170> <ikey_pad_172> <ikey_pad_173> <ikey_pad_177> <ikey_pad_178> <ikey_pad_180> <ikey_pad_181> <ikey_pad_185> <ikey_pad_186> <ikey_pad_188> <ikey_pad_189> <ikey_pad_193> <ikey_pad_194> <ikey_pad_196> <ikey_pad_197> <ikey_pad_201> <ikey_pad_202> <ikey_pad_204> <ikey_pad_205> <ikey_pad_209> <ikey_pad_210> <ikey_pad_212> <ikey_pad_213> <ikey_pad_217> <ikey_pad_218> <ikey_pad_220> <ikey_pad_221> <ikey_pad_225> <ikey_pad_226> <ikey_pad_228> <ikey_pad_229> <ikey_pad_233> <ikey_pad_234> <ikey_pad_236> <ikey_pad_237> <ikey_pad_241> <ikey_pad_242> <ikey_pad_244> <ikey_pad_245> <ikey_pad_249> <ikey_pad_250> <ikey_pad_252> <ikey_pad_253> <ikey_pad_257> <ikey_pad_258> <ikey_pad_260>
+   <ikey_pad_261> <ikey_pad_265> <ikey_pad_266> <ikey_pad_268> <ikey_pad_269> <ikey_pad_273> <ikey_pad_274> <ikey_pad_276> <ikey_pad_277> <ikey_pad_281> <ikey_pad_282> <ikey_pad_284> <ikey_pad_285> <ikey_pad_289> <ikey_pad_290> <ikey_pad_292> <ikey_pad_293> <ikey_pad_297> <ikey_pad_298> <ikey_pad_300> <ikey_pad_301> <ikey_pad_305> <ikey_pad_306> <ikey_pad_308> <ikey_pad_309> <ikey_pad_313> <ikey_pad_314> <ikey_pad_316> <ikey_pad_317> <ikey_pad_321> <ikey_pad_322> <ikey_pad_324> <ikey_pad_325> <ikey_pad_329> <ikey_pad_330> <ikey_pad_332> <ikey_pad_333> <ikey_pad_337> <ikey_pad_338> <ikey_pad_340> <ikey_pad_341> <ikey_pad_345> <ikey_pad_346> <ikey_pad_348> <ikey_pad_349> <ikey_pad_353> <ikey_pad_354> <ikey_pad_356> <ikey_pad_357> <ikey_pad_361> <ikey_pad_362> <ikey_pad_364> <ikey_pad_365> <ikey_pad_369> <ikey_pad_370> <ikey_pad_372> <ikey_pad_373> <ikey_pad_377> <ikey_pad_378> <ikey_pad_380> <ikey_pad_381> <ikey_pad_385> <ikey_pad_386> <ikey_pad_388> <ikey_pad_389> <ikey_pad_393> <ikey_pad_394> <ikey_pad_396>
+   <ikey_pad_397> <ikey_pad_401> <ikey_pad_402> <ikey_pad_404> <ikey_pad_405> <ikey_pad_409> <ikey_pad_410> <ikey_pad_412> <ikey_pad_413> <okey_pad_2> <okey_pad_3> <okey_pad_4> <okey_pad_6> <okey_pad_10> <okey_pad_11> <okey_pad_12> <okey_pad_14> <okey_pad_18> <okey_pad_19> <okey_pad_20> <okey_pad_22> <okey_pad_26> <okey_pad_27> <okey_pad_28> <okey_pad_30> <okey_pad_34> <okey_pad_35> <okey_pad_36> <okey_pad_38> <okey_pad_42> <okey_pad_43> <okey_pad_44> <okey_pad_46> <okey_pad_50> <okey_pad_51> <okey_pad_52> <okey_pad_54> <okey_pad_58> <okey_pad_59> <okey_pad_60> <okey_pad_62> <okey_pad_66> <okey_pad_67> <okey_pad_68> <okey_pad_70> <okey_pad_74> <okey_pad_75> <okey_pad_76> <okey_pad_78> <okey_pad_82> <okey_pad_83> <okey_pad_84> <okey_pad_86> <okey_pad_90> <okey_pad_91> <okey_pad_92> <okey_pad_94> <okey_pad_98> <okey_pad_99> <okey_pad_100> <okey_pad_102> <okey_pad_106> <okey_pad_107> <okey_pad_108> <okey_pad_110> <okey_pad_114> <okey_pad_115> <okey_pad_116> <okey_pad_118> <okey_pad_122> <okey_pad_123>
+   <okey_pad_124> <okey_pad_126> <okey_pad_130> <okey_pad_131> <okey_pad_132> <okey_pad_134> <okey_pad_138> <okey_pad_139> <okey_pad_140> <okey_pad_142> <okey_pad_146> <okey_pad_147> <okey_pad_148> <okey_pad_150> <okey_pad_154> <okey_pad_155> <okey_pad_156> <okey_pad_158> <okey_pad_162> <okey_pad_163> <okey_pad_164> <okey_pad_166> <okey_pad_170> <okey_pad_171> <okey_pad_172> <okey_pad_174> <okey_pad_178> <okey_pad_179> <okey_pad_180> <okey_pad_182> <okey_pad_186> <okey_pad_187> <okey_pad_188> <okey_pad_190> <okey_pad_194> <okey_pad_195> <okey_pad_196> <okey_pad_198> <okey_pad_202> <okey_pad_203> <okey_pad_204> <okey_pad_206> <okey_pad_210> <okey_pad_211> <okey_pad_212> <okey_pad_214> <okey_pad_218> <okey_pad_219> <okey_pad_220> <okey_pad_222> <okey_pad_226> <okey_pad_227> <okey_pad_228> <okey_pad_230> <okey_pad_234> <okey_pad_235> <okey_pad_236> <okey_pad_238> <okey_pad_242> <okey_pad_243> <okey_pad_244> <okey_pad_246> <okey_pad_250> <okey_pad_251> <okey_pad_252> <okey_pad_254> <okey_pad_258> <okey_pad_259>
+   <okey_pad_260> <okey_pad_262> <okey_pad_266> <okey_pad_267> <okey_pad_268> <okey_pad_270> <okey_pad_274> <okey_pad_275> <okey_pad_276> <okey_pad_278> <okey_pad_282> <okey_pad_283> <okey_pad_284> <okey_pad_286> <okey_pad_290> <okey_pad_291> <okey_pad_292> <okey_pad_294> <okey_pad_298> <okey_pad_299> <okey_pad_300> <okey_pad_302> <okey_pad_306> <okey_pad_307> <okey_pad_308> <okey_pad_310> <okey_pad_314> <okey_pad_315> <okey_pad_316> <okey_pad_318> <okey_pad_322> <okey_pad_323> <okey_pad_324> <okey_pad_326> <okey_pad_330> <okey_pad_331> <okey_pad_332> <okey_pad_334> <okey_pad_338> <okey_pad_339> <okey_pad_340> <okey_pad_342> <okey_pad_346> <okey_pad_347> <okey_pad_348> <okey_pad_350> <okey_pad_354> <okey_pad_355> <okey_pad_356> <okey_pad_358> <okey_pad_362> <okey_pad_363> <okey_pad_364> <okey_pad_366> <okey_pad_370> <okey_pad_371> <okey_pad_372> <okey_pad_374> <okey_pad_378> <okey_pad_379> <okey_pad_380> <okey_pad_382> <okey_pad_386> <okey_pad_387> <okey_pad_388> <okey_pad_390> <okey_pad_394> <okey_pad_395>
+   <okey_pad_396> <okey_pad_398> <okey_pad_402> <okey_pad_403> <okey_pad_404> <okey_pad_406> <okey_pad_410> <okey_pad_411> <okey_pad_412> <okey_pad_414>
+INFO:Xst:2261 - The FF/Latch <ikey_pad_456> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_456> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_511> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_511> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_463> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_463> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_464> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_464> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_471> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_471> 
+INFO:Xst:2261 - The FF/Latch <ikey_pad_472> in Unit <top_whirlpool_hash> is equivalent to the following FF/Latch, which will be removed : <okey_pad_472> 
+
+Optimizing unit <WHIRLPOOL_WCIPHER_GAMMA> ...
+
+Optimizing unit <top_whirlpool_hash> ...
+
+Optimizing unit <Whirlpool_hash> ...
+WARNING:Xst:1710 - FF/Latch <round_4> (without init value) has a constant value of 0 in block <Whirlpool_hash>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <WHIRLPOOL_WCIPHER_SBOX> ...
+
+Optimizing unit <WHIRLPOOL_WCIPHER_THETA> ...
+
+Optimizing unit <key_expansion> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top_whirlpool_hash, actual ratio is 28.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 5100
+ Flip-Flops                                            : 5100
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top_whirlpool_hash.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 11628
+#      GND                         : 1
+#      INV                         : 82
+#      LUT1                        : 9
+#      LUT2                        : 743
+#      LUT3                        : 529
+#      LUT4                        : 3172
+#      LUT5                        : 2947
+#      LUT6                        : 4066
+#      MUXCY                       : 42
+#      VCC                         : 1
+#      XORCY                       : 36
+# FlipFlops/Latches                : 5163
+#      FDC                         : 9
+#      FDCE                        : 4367
+#      FDE                         : 724
+#      LD                          : 63
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 1441
+#      IBUF                        : 716
+#      OBUF                        : 725
+# DSPs                             : 1
+#      DSP48E1                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6vlx75tff484-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            5163  out of  93120     5%  
+ Number of Slice LUTs:                11548  out of  46560    24%  
+    Number used as Logic:             11548  out of  46560    24%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:  11926
+   Number with an unused Flip Flop:    6763  out of  11926    56%  
+   Number with an unused LUT:           378  out of  11926     3%  
+   Number of fully used LUT-FF pairs:  4785  out of  11926    40%  
+   Number of unique control sets:        19
+
+IO Utilization: 
+ Number of IOs:                        1442
+ Number of bonded IOBs:                1442  out of    240   600% (*) 
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     32     9%  
+ Number of DSP48E1s:                      1  out of    288     0%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------------------------------+-----------------------------------+-------+
+Clock Signal                                                | Clock buffer(FF name)             | Load  |
+------------------------------------------------------------+-----------------------------------+-------+
+i_clk                                                       | BUFGP                             | 5100  |
+key_expansion/Mram__n022962(key_expansion/Mram__n02296211:O)| BUFG(*)(key_expansion/new_sboxw_0)| 63    |
+------------------------------------------------------------+-----------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 4.970ns (Maximum Frequency: 201.207MHz)
+   Minimum input arrival time before clock: 5.526ns
+   Maximum output required time after clock: 0.797ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'i_clk'
+  Clock period: 4.970ns (frequency: 201.207MHz)
+  Total number of paths / destination ports: 3183103 / 9882
+-------------------------------------------------------------------------
+Delay:               4.970ns (Levels of Logic = 7)
+  Source:            Whirlpool_hash/data_53 (FF)
+  Destination:       Whirlpool_hash/data_508 (FF)
+  Source Clock:      i_clk rising
+  Destination Clock: i_clk rising
+
+  Data Path: Whirlpool_hash/data_53 to Whirlpool_hash/data_508
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.375   0.658  Whirlpool_hash/data_53 (Whirlpool_hash/data_53)
+     LUT4:I0->O            2   0.068   0.423  Whirlpool_hash/WHIRLPOOL_WCIPHER_ROUND/whirlpool_wcipher_gamma/whirlpool_sbox_71/b<0>1 (Whirlpool_hash/WHIRLPOOL_WCIPHER_ROUND/whirlpool_wcipher_gamma/whirlpool_sbox_71/b<3>)
+     LUT5:I4->O            8   0.068   0.684  Whirlpool_hash/WHIRLPOOL_WCIPHER_ROUND/whirlpool_wcipher_gamma/whirlpool_sbox_71/Mxor_c<3>_xo<0>1 (Whirlpool_hash/WHIRLPOOL_WCIPHER_ROUND/whirlpool_wcipher_gamma/whirlpool_sbox_71/c<3>)
+     LUT5:I1->O            5   0.068   0.665  Whirlpool_hash/WHIRLPOOL_WCIPHER_ROUND/whirlpool_wcipher_gamma/whirlpool_sbox_71/Mxor_h<3>_xo<0>1 (Whirlpool_hash/WHIRLPOOL_WCIPHER_ROUND/whirlpool_wcipher_gamma/whirlpool_sbox_71/h<3>)
+     LUT6:I2->O           18   0.068   0.750  Whirlpool_hash/WHIRLPOOL_WCIPHER_ROUND/whirlpool_wcipher_gamma/whirlpool_sbox_71/Mram__n0061[0:3]111 (Whirlpool_hash/WHIRLPOOL_WCIPHER_ROUND/out_sub_byte<458>)
+     LUT4:I0->O            4   0.068   0.511  Whirlpool_hash/WHIRLPOOL_WCIPHER_ROUND/whirlpool_wcipher_theta/o_data<3>2 (Whirlpool_hash/WHIRLPOOL_WCIPHER_ROUND/whirlpool_wcipher_theta/o_data<3>1)
+     LUT6:I4->O            1   0.068   0.417  Whirlpool_hash/WHIRLPOOL_WCIPHER_ROUND/whirlpool_wcipher_theta/o_data<3>3 (Whirlpool_hash/WHIRLPOOL_WCIPHER_ROUND/whirlpool_wcipher_theta/o_data<3>2)
+     LUT6:I5->O            1   0.068   0.000  Whirlpool_hash/whirlpool_state_data[511]_wide_mux_17_OUT<508>11 (Whirlpool_hash/whirlpool_state_data[511]_wide_mux_17_OUT<508>)
+     FDCE:D                    0.011          Whirlpool_hash/data_508
+    ----------------------------------------
+    Total                      4.970ns (0.862ns logic, 4.108ns route)
+                                       (17.3% logic, 82.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'i_clk'
+  Total number of paths / destination ports: 4523 / 2154
+-------------------------------------------------------------------------
+Offset:              5.526ns (Levels of Logic = 19)
+  Source:            i_pim<8> (PAD)
+  Destination:       Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT1_1 (FF)
+  Destination Clock: i_clk rising
+
+  Data Path: i_pim<8> to Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT1_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.003   0.399  i_pim_8_IBUF (i_pim_8_IBUF)
+     DSP48E1:A8->P3        1   3.826   0.399  Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT (Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_3)
+     INV:I->O              1   0.086   0.000  Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_lut<3>_INV_0 (Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_lut<3>)
+     MUXCY:S->O            1   0.290   0.000  Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<3> (Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<3>)
+     MUXCY:CI->O           1   0.020   0.000  Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<4> (Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<4>)
+     MUXCY:CI->O           1   0.020   0.000  Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<5> (Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<6> (Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<7> (Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<8> (Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<9> (Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<10> (Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<11> (Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<12> (Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<13> (Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<14> (Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<15> (Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<16> (Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<17> (Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_cy<17>)
+     XORCY:CI->O           1   0.239   0.000  Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_xor<18> (Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT_Madd_18)
+     FDE:D                     0.011          Maddsub_i_pim[8]_PWR_1_o_MuLt_129_OUT1_1
+    ----------------------------------------
+    Total                      5.526ns (4.728ns logic, 0.798ns route)
+                                       (85.6% logic, 14.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'i_clk'
+  Total number of paths / destination ports: 725 / 725
+-------------------------------------------------------------------------
+Offset:              0.797ns (Levels of Logic = 1)
+  Source:            c_19 (FF)
+  Destination:       o_loop<19> (PAD)
+  Source Clock:      i_clk rising
+
+  Data Path: c_19 to o_loop<19>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.375   0.419  c_19 (c_19)
+     OBUF:I->O                 0.003          o_loop_19_OBUF (o_loop<19>)
+    ----------------------------------------
+    Total                      0.797ns (0.378ns logic, 0.419ns route)
+                                       (47.4% logic, 52.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock i_clk
+---------------------------+---------+---------+---------+---------+
+                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------+---------+---------+---------+---------+
+i_clk                      |    4.970|         |         |         |
+key_expansion/Mram__n022962|         |    2.087|         |         |
+---------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock key_expansion/Mram__n022962
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_clk          |         |         |    1.241|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 53.00 secs
+Total CPU time to Xst completion: 52.83 secs
+ 
+--> 
+
+Total memory usage is 4722476 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  486 (   0 filtered)
+Number of infos    :   52 (   0 filtered)
+

@@ -47,5 +47,4 @@ assign o_data_word_1 = (i_round < 32) ? o_data_lt_word_1 : o_data_sbox_word_1;
 assign o_data_word_2 = (i_round < 32) ? o_data_lt_word_2 : o_data_sbox_word_2;
 assign o_data_word_3 = (i_round < 32) ? o_data_lt_word_3 : o_data_sbox_word_3;
 
-
 endmodule
