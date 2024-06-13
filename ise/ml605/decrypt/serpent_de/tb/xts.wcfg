@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/Code/verarecovery/ise/ml605/decrypt/serpent_de/tb_serpent_xts_de_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_serpent_xts_de" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/tb_serpent_xts_de/o_data_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">o_data_valid</obj_property>
+      <obj_property name="ObjectShortName">o_data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_serpent_xts_de/i_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i_clk</obj_property>
+      <obj_property name="ObjectShortName">i_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_serpent_xts_de/i_rstn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i_rstn</obj_property>
+      <obj_property name="ObjectShortName">i_rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_serpent_xts_de/i_master_key_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i_master_key_valid</obj_property>
+      <obj_property name="ObjectShortName">i_master_key_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_serpent_xts_de/uut/key1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">key1[255:0]</obj_property>
+      <obj_property name="ObjectShortName">key1[255:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_serpent_xts_de/uut/key2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">key2[255:0]</obj_property>
+      <obj_property name="ObjectShortName">key2[255:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_serpent_xts_de/i_key" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i_key[511:0]</obj_property>
+      <obj_property name="ObjectShortName">i_key[511:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_serpent_xts_de/i_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">i_data[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_serpent_xts_de/o_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">o_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">o_data[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_serpent_xts_de/uut/displaystate" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">displaystate[95:0]</obj_property>
+      <obj_property name="ObjectShortName">displaystate[95:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+</wave_config>

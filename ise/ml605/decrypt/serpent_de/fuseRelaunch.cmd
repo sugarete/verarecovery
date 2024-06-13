@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Code/verarecovery/ise/ml605/decrypt/serpent_de/tb_serpent_xts_de_isim_beh.exe" -prj "D:/Code/verarecovery/ise/ml605/decrypt/serpent_de/tb_serpent_xts_de_beh.prj" "work.tb_serpent_xts_de" "work.glbl" 

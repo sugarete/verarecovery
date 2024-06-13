@@ -1,0 +1,7 @@
+verilog work "../../../../src/passgen/small_fifo.v"
+verilog work "../../../../src/passgen/dictionary_password_generate.v"
+verilog work "../../../../src/passgen/read_pass_gen.v"
+verilog work "../../../../src/passgen/password_fifo.v"
+verilog work "../../../../src/passgen/dictionary_mode.v"
+verilog work "../../../../src/passgen/brute_force_mode.v"
+verilog work "../../../../src/passgen/pwr_gen_top.v"

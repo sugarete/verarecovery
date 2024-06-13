@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/Code/verarecovery/ise/ml605/passgen/genpass/pass_gen_top.xst" -ofn "D:/Code/verarecovery/ise/ml605/passgen/genpass/pass_gen_top.syr" 

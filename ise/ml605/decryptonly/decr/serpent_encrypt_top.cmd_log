@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/Code/verarecovery/ise/ml605/decryptonly/decr/serpent_encrypt_top.xst" -ofn "D:/Code/verarecovery/ise/ml605/decryptonly/decr/serpent_encrypt_top.syr" 

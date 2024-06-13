@@ -8,7 +8,28 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Code/verarecovery/src/pbkdf2_hmac_whirlpool/rtl/WHIRLPOOL_WCIPHER_GAMMA.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Code/verarecovery/src/pbkdf2_hmac_whirlpool/rtl/WHIRLPOOL_WCIPHER_PI.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Code/verarecovery/src/pbkdf2_hmac_whirlpool/rtl/WHIRLPOOL_WCIPHER_ROUND.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Code/verarecovery/src/pbkdf2_hmac_whirlpool/rtl/WHIRLPOOL_WCIPHER_THETA.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Code/verarecovery/src/pbkdf2_hmac_whirlpool/rtl/Whirlpool_hash.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Code/verarecovery/src/pbkdf2_hmac_whirlpool/rtl/key_expansion.v&quot; into library work</arg>
+</msg>
+
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Code/verarecovery/src/pbkdf2_hmac_whirlpool/rtl/top_whirlpool_hash.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Code/verarecovery/src/pbkdf2_hmac_whirlpool/rtl/whirlpool_wcipher_sbox.v&quot; into library work</arg>
 </msg>
 
 </messages>

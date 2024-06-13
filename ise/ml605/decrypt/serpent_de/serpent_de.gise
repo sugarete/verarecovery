@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="serpent_de.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="serpent_encrypt_top.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="serpent_encrypt_top.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="serpent_encrypt_top.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="serpent_encrypt_top.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="serpent_encrypt_top.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="serpent_encrypt_top.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="serpent_encrypt_top.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="serpent_encrypt_top.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="serpent_encrypt_top_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="serpent_encrypt_top_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="serpent_encrypt_top_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="serpent_xts_de.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="serpent_xts_de.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="serpent_xts_de.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="serpent_xts_de.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="serpent_xts_de.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="serpent_xts_de.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="serpent_xts_de.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="serpent_xts_de.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="serpent_xts_de_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="serpent_xts_de_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_serpent_xts_de_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_serpent_xts_de_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tb_serpent_xts_de_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1718252116" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1718252116">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1718252116" xil_pn:in_ck="7286740430056675289" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1718252116">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../../../../src/serpent-bitslices/rtl/key_mem.v"/>
+      <outfile xil_pn:name="../../../../src/serpent-bitslices/rtl/key_schedule.v"/>
+      <outfile xil_pn:name="../../../../src/serpent-bitslices/rtl/linear_transform.v"/>
+      <outfile xil_pn:name="../../../../src/serpent-bitslices/rtl/linear_transform_inverse.v"/>
+      <outfile xil_pn:name="../../../../src/serpent-bitslices/rtl/sboxes.v"/>
+      <outfile xil_pn:name="../../../../src/serpent-bitslices/rtl/sboxes_inverse.v"/>
+      <outfile xil_pn:name="../../../../src/serpent-bitslices/rtl/serpent_decrypt.v"/>
+      <outfile xil_pn:name="../../../../src/serpent-bitslices/rtl/serpent_decrypt_stage.v"/>
+      <outfile xil_pn:name="../../../../src/serpent-bitslices/rtl/serpent_decrypt_top.v"/>
+      <outfile xil_pn:name="../../../../src/serpent-bitslices/rtl/serpent_encrypt.v"/>
+      <outfile xil_pn:name="../../../../src/serpent-bitslices/rtl/serpent_encrypt_stage.v"/>
+      <outfile xil_pn:name="../../../../src/serpent-bitslices/rtl/serpent_encrypt_top.v"/>
+      <outfile xil_pn:name="../../../../src/serpent-bitslices/rtl/serpent_xts_de.v"/>
+      <outfile xil_pn:name="../../../../src/serpent-bitslices/tb/xts_de_tb.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1718252116" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8014196498715896173" xil_pn:start_ts="1718252116">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1718252116" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2589346850264650909" xil_pn:start_ts="1718252116">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1718252116" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-3966622864875739196" xil_pn:start_ts="1718252116">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+    </transform>
+    <transform xil_pn:end_ts="1718252116" xil_pn:in_ck="7286740430056675289" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1718252116">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../../../../src/serpent-bitslices/rtl/key_mem.v"/>
+      <outfile xil_pn:name="../../../../src/serpent-bitslices/rtl/key_schedule.v"/>
+      <outfile xil_pn:name="../../../../src/serpent-bitslices/rtl/linear_transform.v"/>
+      <outfile xil_pn:name="../../../../src/serpent-bitslices/rtl/linear_transform_inverse.v"/>
+      <outfile xil_pn:name="../../../../src/serpent-bitslices/rtl/sboxes.v"/>
+      <outfile xil_pn:name="../../../../src/serpent-bitslices/rtl/sboxes_inverse.v"/>
+      <outfile xil_pn:name="../../../../src/serpent-bitslices/rtl/serpent_decrypt.v"/>
+      <outfile xil_pn:name="../../../../src/serpent-bitslices/rtl/serpent_decrypt_stage.v"/>
+      <outfile xil_pn:name="../../../../src/serpent-bitslices/rtl/serpent_decrypt_top.v"/>
+      <outfile xil_pn:name="../../../../src/serpent-bitslices/rtl/serpent_encrypt.v"/>
+      <outfile xil_pn:name="../../../../src/serpent-bitslices/rtl/serpent_encrypt_stage.v"/>
+      <outfile xil_pn:name="../../../../src/serpent-bitslices/rtl/serpent_encrypt_top.v"/>
+      <outfile xil_pn:name="../../../../src/serpent-bitslices/rtl/serpent_xts_de.v"/>
+      <outfile xil_pn:name="../../../../src/serpent-bitslices/tb/xts_de_tb.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1718252119" xil_pn:in_ck="7286740430056675289" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8218577066961433170" xil_pn:start_ts="1718252116">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="tb_serpent_xts_de_beh.prj"/>
+      <outfile xil_pn:name="tb_serpent_xts_de_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1718252119" xil_pn:in_ck="4844695766017417867" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-4606930636716079329" xil_pn:start_ts="1718252119">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="tb_serpent_xts_de_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1718260247" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1718260247">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1718260247" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="993724937752356478" xil_pn:start_ts="1718260247">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1718260247" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="2985466648302722228" xil_pn:start_ts="1718260247">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1718260247" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1718260247">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1718260247" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-4717042432291683794" xil_pn:start_ts="1718260247">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1718260247" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-311711526559847569" xil_pn:start_ts="1718260247">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1718260247" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="5186413419703930430" xil_pn:start_ts="1718260247">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1718260410" xil_pn:in_ck="-5860185771826891054" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="7579394289791488010" xil_pn:start_ts="1718260247">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="serpent_encrypt_top.lso"/>
+      <outfile xil_pn:name="serpent_encrypt_top.ngc"/>
+      <outfile xil_pn:name="serpent_encrypt_top.ngr"/>
+      <outfile xil_pn:name="serpent_encrypt_top.prj"/>
+      <outfile xil_pn:name="serpent_encrypt_top.stx"/>
+      <outfile xil_pn:name="serpent_encrypt_top.syr"/>
+      <outfile xil_pn:name="serpent_encrypt_top.xst"/>
+      <outfile xil_pn:name="serpent_encrypt_top_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+  </transforms>
+
+</generated_project>

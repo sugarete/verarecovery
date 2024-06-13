@@ -1,0 +1,28 @@
+Command line:
+   tb_serpent_xts_de_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  60802
+
+Thu Jun 13 11:15:20 2024
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5163.95 Meg
+
+ Total Signals          : 243
+ Total Nets             : 7062
+ Total Signal Drivers   : 887
+ Total Blocks           : 59
+ Total Primitive Blocks : 11
+ Total Processes        : 906
+ Total Traceable Variables  : 218
+ Total Scalar Nets and Variables : 29193
+
+ Total Simulation Time: 0.28125 sec
+
+ Current Memory Usage: 4692.09 Meg
+
+Thu Jun 13 11:44:39 2024
+
