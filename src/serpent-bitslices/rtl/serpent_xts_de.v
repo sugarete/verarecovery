@@ -11,8 +11,8 @@ module serpent_xts_de (
 
 //---------wires, registers----------
 reg [255:0] key1, key2;
-reg enable_tweak, enable_encrypt, valid;
-wire tweak_valid, encrypt_valid;
+reg enable_tweak, enable_decrypt, valid;
+wire tweak_valid, decrypt_valid;
 reg  [127:0] i_data_tweak;
 wire [127:0] o_data_tweak;
 reg [127:0]  data_cipher_input; 
@@ -41,11 +41,11 @@ serpent_encrypt_top data_cipher (
     .i_clk(i_clk),
     .i_rstn(i_rstn),
     .i_master_key_valid(i_master_key_valid),
-    .i_enable_encrypt(enable_encrypt),
+    .i_enable_encrypt(enable_decrypt),
     .i_key(key1),
     .i_data(data_cipher_input),
     .o_data(data_cipher_output),
-    .o_data_valid(encrypt_valid)
+    .o_data_valid(decrypt_valid)
 );
 
 assign o_data = xts_output;
@@ -73,15 +73,14 @@ always @(posedge i_clk or negedge i_rstn) begin
                 if (tweak_valid) begin
                     data_cipher_input <= i_data[127:0] ^ o_data_tweak;
                     enable_tweak <= 0;
-                    enable_encrypt <= 1;
+                    enable_decrypt <= 1;
                     serpent_xts_de_state <= DATA_CIPHER;
                 end
             end
             DATA_CIPHER: begin
-                if (encrypt_valid) begin
+                if (decrypt_valid) begin
                     xts_output <= data_cipher_output ^ i_data[127:0];
-                    // xts_output <= 128'hc863efb35441381833727e06fb0a8adf;
-                    enable_encrypt <= 0;
+                    enable_decrypt <= 0;
                     valid <= 1;
                     serpent_xts_de_state <= DONE;
                 end

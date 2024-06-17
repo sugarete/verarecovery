@@ -60,6 +60,9 @@ module tb_serpent_xts_de;
         // Wait for the DUT to complete processing
         #200;
 		wait (o_data_valid);	
+		
+		i_enable_decrypt = 0;
+		i_master_key_valid = 0;
         // Display the output
         $display("Output Data: %h", o_data);
 

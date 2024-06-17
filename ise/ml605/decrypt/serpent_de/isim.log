@@ -13,4 +13,79 @@ Finished circuit initialization process.
 # run 1.00us
 # run 1.00us
 # run 1.00us
+Output Data: b7059d2a5fb33d3be845bef108946f7d
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING:  For instance serpent_encrypt_stage_inst/apply_sbox/, width 3 of formal port i_sbox_index is not equal to width 32 of actual constant.
+WARNING:  For instance serpent_encrypt_stage_inst/apply_sbox/, width 3 of formal port i_sbox_index is not equal to width 32 of actual constant.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
 Output Data: c863efb35441381833727e06fb0a8adf
+Stopped at time : 1221585 ns : File "D:/Code/verarecovery/src/serpent-bitslices/rtl/sboxes.v" Line 48
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING:  For instance serpent_encrypt_stage_inst/apply_sbox/, width 3 of formal port i_sbox_index is not equal to width 32 of actual constant.
+WARNING:  For instance serpent_encrypt_stage_inst/apply_sbox/, width 3 of formal port i_sbox_index is not equal to width 32 of actual constant.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+Output Data: c863efb35441381833727e06fb0a8adf
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING:  For instance serpent_encrypt_stage_inst/apply_sbox/, width 3 of formal port i_sbox_index is not equal to width 32 of actual constant.
+WARNING:  For instance serpent_encrypt_stage_inst/apply_sbox/, width 3 of formal port i_sbox_index is not equal to width 32 of actual constant.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+Output Data: c863efb35441381833727e06fb0a8adf
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING:  For instance serpent_encrypt_stage_inst/apply_sbox/, width 3 of formal port i_sbox_index is not equal to width 32 of actual constant.
+WARNING:  For instance serpent_encrypt_stage_inst/apply_sbox/, width 3 of formal port i_sbox_index is not equal to width 32 of actual constant.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+Output Data: c863efb35441381833727e06fb0a8adf
+# run 1.00us
+# run 1.00us
+# run 1.00us
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING:  For instance serpent_encrypt_stage_inst/apply_sbox/, width 3 of formal port i_sbox_index is not equal to width 32 of actual constant.
+WARNING:  For instance serpent_encrypt_stage_inst/apply_sbox/, width 3 of formal port i_sbox_index is not equal to width 32 of actual constant.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+Output Data: c863efb35441381833727e06fb0a8adf
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING:  For instance serpent_encrypt_stage_inst/apply_sbox/, width 3 of formal port i_sbox_index is not equal to width 32 of actual constant.
+WARNING:  For instance serpent_encrypt_stage_inst/apply_sbox/, width 3 of formal port i_sbox_index is not equal to width 32 of actual constant.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 1.00us
+# run 1.00us
+# run 1.00us
+# run 1.00us
+Output Data: c863efb35441381833727e06fb0a8adf
+# run 1.00us
+# run 1.00us

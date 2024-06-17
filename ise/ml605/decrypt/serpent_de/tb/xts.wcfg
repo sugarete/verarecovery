@@ -11,10 +11,6 @@
       </db_ref>
    </db_ref_list>
    <WVObjectSize size="10" />
-   <wvobject fp_name="/tb_serpent_xts_de/o_data_valid" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">o_data_valid</obj_property>
-      <obj_property name="ObjectShortName">o_data_valid</obj_property>
-   </wvobject>
    <wvobject fp_name="/tb_serpent_xts_de/i_clk" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">i_clk</obj_property>
       <obj_property name="ObjectShortName">i_clk</obj_property>
@@ -23,34 +19,71 @@
       <obj_property name="ElementShortName">i_rstn</obj_property>
       <obj_property name="ObjectShortName">i_rstn</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_serpent_xts_de/i_master_key_valid" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">i_master_key_valid</obj_property>
-      <obj_property name="ObjectShortName">i_master_key_valid</obj_property>
+   <wvobject fp_name="group16" type="group">
+      <obj_property name="label">DE_INPUT</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_serpent_xts_de/uut/i_enable_decrypt" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_enable_decrypt</obj_property>
+         <obj_property name="ObjectShortName">i_enable_decrypt</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_serpent_xts_de/i_master_key_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_master_key_valid</obj_property>
+         <obj_property name="ObjectShortName">i_master_key_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_serpent_xts_de/i_key" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_key[511:0]</obj_property>
+         <obj_property name="ObjectShortName">i_key[511:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_serpent_xts_de/uut/key1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">key1[255:0]</obj_property>
+         <obj_property name="ObjectShortName">key1[255:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_serpent_xts_de/uut/key2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">key2[255:0]</obj_property>
+         <obj_property name="ObjectShortName">key2[255:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_serpent_xts_de/i_data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_data[127:0]</obj_property>
+         <obj_property name="ObjectShortName">i_data[127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
    </wvobject>
-   <wvobject fp_name="/tb_serpent_xts_de/uut/key1" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">key1[255:0]</obj_property>
-      <obj_property name="ObjectShortName">key1[255:0]</obj_property>
+   <wvobject fp_name="/tb_serpent_xts_de/uut/enable_tweak" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable_tweak</obj_property>
+      <obj_property name="ObjectShortName">enable_tweak</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tweak_valid</obj_property>
+      <obj_property name="ObjectShortName">tweak_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_serpent_xts_de/uut/o_data_tweak" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">o_data_tweak[127:0]</obj_property>
+      <obj_property name="ObjectShortName">o_data_tweak[127:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_serpent_xts_de/uut/key2" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">key2[255:0]</obj_property>
-      <obj_property name="ObjectShortName">key2[255:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+   <wvobject fp_name="/tb_serpent_xts_de/uut/enable_decrypt" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable_decrypt</obj_property>
+      <obj_property name="ObjectShortName">enable_decrypt</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_serpent_xts_de/i_key" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">i_key[511:0]</obj_property>
-      <obj_property name="ObjectShortName">i_key[511:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+   <wvobject fp_name="/tb_serpent_xts_de/uut/decrypt_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">decrypt_valid</obj_property>
+      <obj_property name="ObjectShortName">decrypt_valid</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_serpent_xts_de/i_data" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">i_data[127:0]</obj_property>
-      <obj_property name="ObjectShortName">i_data[127:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_serpent_xts_de/o_data" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">o_data[127:0]</obj_property>
-      <obj_property name="ObjectShortName">o_data[127:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+   <wvobject fp_name="group17" type="group">
+      <obj_property name="label">DE_OUTPUT</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_serpent_xts_de/o_data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">o_data[127:0]</obj_property>
+         <obj_property name="ObjectShortName">o_data[127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_serpent_xts_de/o_data_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">o_data_valid</obj_property>
+         <obj_property name="ObjectShortName">o_data_valid</obj_property>
+      </wvobject>
    </wvobject>
    <wvobject fp_name="/tb_serpent_xts_de/uut/displaystate" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">displaystate[95:0]</obj_property>

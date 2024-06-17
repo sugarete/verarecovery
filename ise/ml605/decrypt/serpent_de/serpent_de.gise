@@ -57,11 +57,11 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1718252116" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1718252116">
+    <transform xil_pn:end_ts="1718551107" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1718551107">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1718252116" xil_pn:in_ck="7286740430056675289" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1718252116">
+    <transform xil_pn:end_ts="1718551107" xil_pn:in_ck="7286740430056675289" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1718551107">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -83,20 +83,19 @@
       <outfile xil_pn:name="../../../../src/serpent-bitslices/rtl/serpent_xts_de.v"/>
       <outfile xil_pn:name="../../../../src/serpent-bitslices/tb/xts_de_tb.v"/>
     </transform>
-    <transform xil_pn:end_ts="1718252116" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8014196498715896173" xil_pn:start_ts="1718252116">
+    <transform xil_pn:end_ts="1718551107" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8014196498715896173" xil_pn:start_ts="1718551107">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1718252116" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2589346850264650909" xil_pn:start_ts="1718252116">
+    <transform xil_pn:end_ts="1718551107" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2589346850264650909" xil_pn:start_ts="1718551107">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1718252116" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-3966622864875739196" xil_pn:start_ts="1718252116">
+    <transform xil_pn:end_ts="1718551107" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="2985466648302722228" xil_pn:start_ts="1718551107">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
-    <transform xil_pn:end_ts="1718252116" xil_pn:in_ck="7286740430056675289" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1718252116">
+    <transform xil_pn:end_ts="1718551107" xil_pn:in_ck="7286740430056675289" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1718551107">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -119,7 +118,7 @@
       <outfile xil_pn:name="../../../../src/serpent-bitslices/rtl/serpent_xts_de.v"/>
       <outfile xil_pn:name="../../../../src/serpent-bitslices/tb/xts_de_tb.v"/>
     </transform>
-    <transform xil_pn:end_ts="1718252119" xil_pn:in_ck="7286740430056675289" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8218577066961433170" xil_pn:start_ts="1718252116">
+    <transform xil_pn:end_ts="1718551110" xil_pn:in_ck="7286740430056675289" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8218577066961433170" xil_pn:start_ts="1718551107">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -134,7 +133,7 @@
       <outfile xil_pn:name="tb_serpent_xts_de_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1718252119" xil_pn:in_ck="4844695766017417867" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-4606930636716079329" xil_pn:start_ts="1718252119">
+    <transform xil_pn:end_ts="1718551110" xil_pn:in_ck="4844695766017417867" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-4606930636716079329" xil_pn:start_ts="1718551110">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
@@ -176,6 +175,8 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="serpent_encrypt_top.lso"/>
       <outfile xil_pn:name="serpent_encrypt_top.ngc"/>

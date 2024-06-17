@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2024-06-13T13:37:58</DateModified>
+  <DateModified>2024-06-16T22:30:08</DateModified>
   <ModuleName>serpent_encrypt_top</ModuleName>
   <SummaryTimeStamp>2024-06-13T13:30:47</SummaryTimeStamp>
   <SavedFilePath>D:/Code/verarecovery/ise/ml605/decrypt/serpent_de/iseconfig/serpent_encrypt_top.xreport</SavedFilePath>
@@ -17,8 +17,8 @@
     <toc-item title="Performance Summary" target="Performance Summary" />
     <toc-item title="Failing Constraints" target="Failing Constraints" />
     <toc-item title="Detailed Reports" target="Detailed Reports" />
-    <table-item tableKey="DeviceUtilizationSummary(estimatedvalues)" tableState="CollapsedTable" />
-    <table-item tableKey="DeviceUtilizationSummary(estimatedvalues)" tableState="CollapsedTable" />
+    <table-item tableState="CollapsedTable" tableKey="DeviceUtilizationSummary(estimatedvalues)" />
+    <table-item tableState="CollapsedTable" tableKey="DeviceUtilizationSummary(estimatedvalues)" />
    </view>
    <view inputState="Unknown" program="implementation" contextTags="FPGA_ONLY" hidden="true" type="HTML" file="serpent_xts_de_envsettings.html" label="System Settings" />
    <view inputState="Translated" program="map" locator="MAP_IOB_TABLE" contextTags="FPGA_ONLY" type="IOBProperties" file="serpent_xts_de_map.xrpt" label="IOB Properties" />

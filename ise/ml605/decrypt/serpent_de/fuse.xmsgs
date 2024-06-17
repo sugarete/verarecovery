@@ -5,12 +5,6 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="329" delta="unknown" >"D:/Code/verarecovery/ise/ml605/decrypt/serpent_de/../../../../src/serpent-bitslices/rtl/serpent_xts_de.v" Line 34: Target &lt;<arg fmt="%s" index="1">o_data_tweak</arg>&gt; of concurrent assignment or output port connection should be a net type.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="329" delta="unknown" >"D:/Code/verarecovery/ise/ml605/decrypt/serpent_de/../../../../src/serpent-bitslices/rtl/serpent_xts_de.v" Line 45: Target &lt;<arg fmt="%s" index="1">data_cipher_output</arg>&gt; of concurrent assignment or output port connection should be a net type.
-</msg>
-
 <msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"D:/Code/verarecovery/ise/ml605/decrypt/serpent_de/../../../../src/serpent-bitslices/rtl/key_schedule.v" Line 41: Port <arg fmt="%s" index="1">o_word_0</arg> is not connected to this instance
 </msg>
 
