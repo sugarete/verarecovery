@@ -1,0 +1,35 @@
+ISim log file
+Running: D:\Code\verarecovery\ise\ml605\serpent_v2\serpent\serpent_top_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Code/verarecovery/ise/ml605/serpent_v2/serpent/serpent_top_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING: File "D:/Code/verarecovery/src/serpent-bitslices/rtl/serpent_top.v" Line 34.  For instance dut/key_storage/, width 6 of formal port i_addr is not equal to width 1 of actual signal address.
+WARNING:  For instance serpent_encrypt_stage_inst/apply_sbox/, width 3 of formal port i_sbox_index is not equal to width 32 of actual constant.
+WARNING:  For instance serpent_decrypt_stage_inst/apply_sbox_inv/, width 3 of formal port i_sbox_index is not equal to width 32 of actual constant.
+WARNING: File "D:/Code/verarecovery/src/serpent-bitslices/rtl/serpent_decrypt_stage.v" Line 38.  For instance serpent_decrypt_stage_inst/apply_sbox_inv/, width 32 of formal port o_word_2 is not equal to width 1 of actual signal o_data_sbox_word_2.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 1.00us
+# run 1.00us
+Encrypted Data: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Decrypted Data: 00000000000000000000000000000000
+Decryption failed
+Stopped at time : 2085 ns :  in File "D:/Code/verarecovery/src/serpent-bitslices/tb/serpent_top_tb.v" Line 68 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING: File "D:/Code/verarecovery/src/serpent-bitslices/rtl/serpent_top.v" Line 34.  For instance dut/key_storage/, width 6 of formal port i_addr is not equal to width 1 of actual signal address.
+WARNING:  For instance serpent_encrypt_stage_inst/apply_sbox/, width 3 of formal port i_sbox_index is not equal to width 32 of actual constant.
+WARNING:  For instance serpent_decrypt_stage_inst/apply_sbox_inv/, width 3 of formal port i_sbox_index is not equal to width 32 of actual constant.
+WARNING: File "D:/Code/verarecovery/src/serpent-bitslices/rtl/serpent_decrypt_stage.v" Line 38.  For instance serpent_decrypt_stage_inst/apply_sbox_inv/, width 32 of formal port o_word_2 is not equal to width 1 of actual signal o_data_sbox_word_2.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run 1.00us
+# run 1.00us
+Encrypted Data: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Decrypted Data: 00000000000000000000000000000000
+Decryption failed
+Stopped at time : 2085 ns :  in File "D:/Code/verarecovery/src/serpent-bitslices/tb/serpent_top_tb.v" Line 68 

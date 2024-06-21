@@ -85,7 +85,7 @@ module sboxes_inverse (
                 4'b0010: InvSbox0 = 4'b1011;
                 4'b0011: InvSbox0 = 4'b0000;
                 4'b0100: InvSbox0 = 4'b1010;
-                4'b0105: InvSbox0 = 4'b0110;
+                4'b0101: InvSbox0 = 4'b0110;
                 4'b0110: InvSbox0 = 4'b0101;
                 4'b0111: InvSbox0 = 4'b1100;
                 4'b1000: InvSbox0 = 4'b0001;
@@ -115,7 +115,7 @@ module sboxes_inverse (
                 4'b0110: InvSbox1 = 4'b1100;
                 4'b0111: InvSbox1 = 4'b0011;
                 4'b1000: InvSbox1 = 4'b1011;
-                4'b1009: InvSbox1 = 4'b0100;
+                4'b1001: InvSbox1 = 4'b0100;
                 4'b1010: InvSbox1 = 4'b0111;
                 4'b1011: InvSbox1 = 4'b1001;
                 4'b1100: InvSbox1 = 4'b0001;
@@ -163,11 +163,11 @@ module sboxes_inverse (
                 4'b0010: InvSbox3 = 4'b1010;
                 4'b0011: InvSbox3 = 4'b0111;
                 4'b0100: InvSbox3 = 4'b1011;
-                4'b0105: InvSbox3 = 4'b1110;
+                4'b0101: InvSbox3 = 4'b1110;
                 4'b0110: InvSbox3 = 4'b0110;
-                4'b0117: InvSbox3 = 4'b1101;
+                4'b0111: InvSbox3 = 4'b1101;
                 4'b1000: InvSbox3 = 4'b0011;
-                4'b1005: InvSbox3 = 4'b0101;
+                4'b1001: InvSbox3 = 4'b0101;
                 4'b1010: InvSbox3 = 4'b1100;
                 4'b1011: InvSbox3 = 4'b0010;
                 4'b1100: InvSbox3 = 4'b0100;
@@ -193,7 +193,7 @@ module sboxes_inverse (
                 4'b0110: InvSbox4 = 4'b0111;
                 4'b0111: InvSbox4 = 4'b1110;
                 4'b1000: InvSbox4 = 4'b0010;
-                4'b1009: InvSbox4 = 4'b1100;
+                4'b1001: InvSbox4 = 4'b1100;
                 4'b1010: InvSbox4 = 4'b1011;
                 4'b1011: InvSbox4 = 4'b0110;
                 4'b1100: InvSbox4 = 4'b0100;

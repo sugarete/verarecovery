@@ -1,4 +1,0 @@
-xst -intstyle ise -ifn "D:/Code/verarecovery/ise/ml605/decrypt/serpent_de/serpent_xts_de.xst" -ofn "D:/Code/verarecovery/ise/ml605/decrypt/serpent_de/serpent_xts_de.syr" 
-xst -intstyle ise -ifn "D:/Code/verarecovery/ise/ml605/decrypt/serpent_de/serpent_xts_de.xst" -ofn "D:/Code/verarecovery/ise/ml605/decrypt/serpent_de/serpent_xts_de.syr" 
-xst -intstyle ise -ifn "D:/Code/verarecovery/ise/ml605/decrypt/serpent_de/serpent_xts_de.xst" -ofn "D:/Code/verarecovery/ise/ml605/decrypt/serpent_de/serpent_xts_de.syr" 
-xst -intstyle ise -ifn "D:/Code/verarecovery/ise/ml605/decrypt/serpent_de/serpent_xts_de.xst" -ofn "D:/Code/verarecovery/ise/ml605/decrypt/serpent_de/serpent_xts_de.syr" 

@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/Code/verarecovery/ise/ml605/serpent_v2/serpent/serpent_top_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="serpent_top_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/serpent_top_tb/o_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">o_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">o_data[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serpent_top_tb/o_data_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">o_data_valid</obj_property>
+      <obj_property name="ObjectShortName">o_data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serpent_top_tb/i_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i_clk</obj_property>
+      <obj_property name="ObjectShortName">i_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serpent_top_tb/i_rstn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i_rstn</obj_property>
+      <obj_property name="ObjectShortName">i_rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serpent_top_tb/i_key_valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i_key_valid</obj_property>
+      <obj_property name="ObjectShortName">i_key_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serpent_top_tb/i_ena_en_de" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i_ena_en_de</obj_property>
+      <obj_property name="ObjectShortName">i_ena_en_de</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serpent_top_tb/i_key" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i_key[255:0]</obj_property>
+      <obj_property name="ObjectShortName">i_key[255:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/serpent_top_tb/i_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">i_data[127:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="group307" type="group">
+      <obj_property name="label">key memory</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/serpent_top_tb/dut/key_storage/i_clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_clk</obj_property>
+         <obj_property name="ObjectShortName">i_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_storage/i_rstn" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_rstn</obj_property>
+         <obj_property name="ObjectShortName">i_rstn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_storage/i_write_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_write_en</obj_property>
+         <obj_property name="ObjectShortName">i_write_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_storage/i_read_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_read_en</obj_property>
+         <obj_property name="ObjectShortName">i_read_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_storage/i_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_addr[5:0]</obj_property>
+         <obj_property name="ObjectShortName">i_addr[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_storage/i_key" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_key[127:0]</obj_property>
+         <obj_property name="ObjectShortName">i_key[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_storage/o_key" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">o_key[127:0]</obj_property>
+         <obj_property name="ObjectShortName">o_key[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_storage/i" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_storage/mem" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem[32:0,127:0]</obj_property>
+         <obj_property name="ObjectShortName">mem[32:0,127:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group332" type="group">
+      <obj_property name="label">key schedule</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/serpent_top_tb/dut/key_scheduler/i_clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_clk</obj_property>
+         <obj_property name="ObjectShortName">i_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_scheduler/i_rstn" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_rstn</obj_property>
+         <obj_property name="ObjectShortName">i_rstn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_scheduler/i_begin" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_begin</obj_property>
+         <obj_property name="ObjectShortName">i_begin</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_scheduler/i_key" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_key[255:0]</obj_property>
+         <obj_property name="ObjectShortName">i_key[255:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_scheduler/o_subkey" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">o_subkey[127:0]</obj_property>
+         <obj_property name="ObjectShortName">o_subkey[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_scheduler/o_address" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">o_address[5:0]</obj_property>
+         <obj_property name="ObjectShortName">o_address[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_scheduler/o_subkey_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">o_subkey_valid</obj_property>
+         <obj_property name="ObjectShortName">o_subkey_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_scheduler/word_round" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">word_round[7:0]</obj_property>
+         <obj_property name="ObjectShortName">word_round[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_scheduler/word" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">word[139:0,31:0]</obj_property>
+         <obj_property name="ObjectShortName">word[139:0,31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_scheduler/key_round" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">key_round[5:0]</obj_property>
+         <obj_property name="ObjectShortName">key_round[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_scheduler/key_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">key_valid</obj_property>
+         <obj_property name="ObjectShortName">key_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_scheduler/key_sbox_index" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">key_sbox_index[2:0]</obj_property>
+         <obj_property name="ObjectShortName">key_sbox_index[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_scheduler/key_word_0" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">key_word_0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">key_word_0[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_scheduler/key_word_1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">key_word_1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">key_word_1[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_scheduler/key_word_2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">key_word_2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">key_word_2[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_scheduler/key_word_3" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">key_word_3[31:0]</obj_property>
+         <obj_property name="ObjectShortName">key_word_3[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_scheduler/i" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_scheduler/key_schedule_state" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">key_schedule_state[1:0]</obj_property>
+         <obj_property name="ObjectShortName">key_schedule_state[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_scheduler/displaystate_key_schedule" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">displaystate_key_schedule[87:0]</obj_property>
+         <obj_property name="ObjectShortName">displaystate_key_schedule[87:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_scheduler/IDLE" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">IDLE[1:0]</obj_property>
+         <obj_property name="ObjectShortName">IDLE[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_scheduler/WORD_EXPAND" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">WORD_EXPAND[1:0]</obj_property>
+         <obj_property name="ObjectShortName">WORD_EXPAND[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_scheduler/KEY_GEN" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">KEY_GEN[1:0]</obj_property>
+         <obj_property name="ObjectShortName">KEY_GEN[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_scheduler/WAIT" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">WAIT[1:0]</obj_property>
+         <obj_property name="ObjectShortName">WAIT[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/key_scheduler/phi" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">phi[31:0]</obj_property>
+         <obj_property name="ObjectShortName">phi[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group358" type="group">
+      <obj_property name="label">encrypt</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/serpent_top_tb/dut/encrypt_block/i_clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_clk</obj_property>
+         <obj_property name="ObjectShortName">i_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/encrypt_block/i_rstn" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_rstn</obj_property>
+         <obj_property name="ObjectShortName">i_rstn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/encrypt_block/i_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_en</obj_property>
+         <obj_property name="ObjectShortName">i_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/encrypt_block/i_subkey_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_subkey_valid</obj_property>
+         <obj_property name="ObjectShortName">i_subkey_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/encrypt_block/i_key" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_key[127:0]</obj_property>
+         <obj_property name="ObjectShortName">i_key[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/encrypt_block/i_data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_data[127:0]</obj_property>
+         <obj_property name="ObjectShortName">i_data[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/encrypt_block/o_data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">o_data[127:0]</obj_property>
+         <obj_property name="ObjectShortName">o_data[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/encrypt_block/o_address" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">o_address[5:0]</obj_property>
+         <obj_property name="ObjectShortName">o_address[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/encrypt_block/o_data_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">o_data_valid</obj_property>
+         <obj_property name="ObjectShortName">o_data_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/encrypt_block/word_0_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">word_0_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">word_0_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/encrypt_block/word_1_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">word_1_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">word_1_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/encrypt_block/word_2_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">word_2_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">word_2_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/encrypt_block/word_3_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">word_3_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">word_3_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/encrypt_block/encrypt_round" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">encrypt_round[5:0]</obj_property>
+         <obj_property name="ObjectShortName">encrypt_round[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/encrypt_block/word_0_in" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">word_0_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">word_0_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/encrypt_block/word_1_in" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">word_1_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">word_1_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/encrypt_block/word_2_in" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">word_2_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">word_2_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/encrypt_block/word_3_in" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">word_3_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">word_3_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/encrypt_block/mixed_round_32" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mixed_round_32[127:0]</obj_property>
+         <obj_property name="ObjectShortName">mixed_round_32[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/encrypt_block/valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">valid</obj_property>
+         <obj_property name="ObjectShortName">valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/encrypt_block/serpent_en_state" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">serpent_en_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">serpent_en_state[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/encrypt_block/displaystate_serpent_en" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">displaystate_serpent_en[47:0]</obj_property>
+         <obj_property name="ObjectShortName">displaystate_serpent_en[47:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/encrypt_block/IDLE" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">IDLE[2:0]</obj_property>
+         <obj_property name="ObjectShortName">IDLE[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/encrypt_block/ROUND" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ROUND[2:0]</obj_property>
+         <obj_property name="ObjectShortName">ROUND[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/encrypt_block/MIX32" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">MIX32[2:0]</obj_property>
+         <obj_property name="ObjectShortName">MIX32[2:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group384" type="group">
+      <obj_property name="label">decrypt</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/serpent_top_tb/dut/decrypt_block/i_clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_clk</obj_property>
+         <obj_property name="ObjectShortName">i_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/decrypt_block/i_rstn" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_rstn</obj_property>
+         <obj_property name="ObjectShortName">i_rstn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/decrypt_block/i_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_en</obj_property>
+         <obj_property name="ObjectShortName">i_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/decrypt_block/i_subkey_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_subkey_valid</obj_property>
+         <obj_property name="ObjectShortName">i_subkey_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/decrypt_block/i_key" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_key[127:0]</obj_property>
+         <obj_property name="ObjectShortName">i_key[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/decrypt_block/i_data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_data[127:0]</obj_property>
+         <obj_property name="ObjectShortName">i_data[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/decrypt_block/o_data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">o_data[127:0]</obj_property>
+         <obj_property name="ObjectShortName">o_data[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/decrypt_block/o_address" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">o_address[5:0]</obj_property>
+         <obj_property name="ObjectShortName">o_address[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/decrypt_block/o_data_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">o_data_valid</obj_property>
+         <obj_property name="ObjectShortName">o_data_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/decrypt_block/word_0_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">word_0_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">word_0_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/decrypt_block/word_1_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">word_1_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">word_1_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/decrypt_block/word_2_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">word_2_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">word_2_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/decrypt_block/word_3_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">word_3_out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">word_3_out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/decrypt_block/decrypt_round" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">decrypt_round[5:0]</obj_property>
+         <obj_property name="ObjectShortName">decrypt_round[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/decrypt_block/word_0_in" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">word_0_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">word_0_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/decrypt_block/word_1_in" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">word_1_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">word_1_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/decrypt_block/word_2_in" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">word_2_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">word_2_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/decrypt_block/word_3_in" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">word_3_in[31:0]</obj_property>
+         <obj_property name="ObjectShortName">word_3_in[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/decrypt_block/mixed_round_32" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mixed_round_32[127:0]</obj_property>
+         <obj_property name="ObjectShortName">mixed_round_32[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/decrypt_block/valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">valid</obj_property>
+         <obj_property name="ObjectShortName">valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/decrypt_block/serpent_de_state" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">serpent_de_state[2:0]</obj_property>
+         <obj_property name="ObjectShortName">serpent_de_state[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/decrypt_block/displaystate_serpent_de" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">displaystate_serpent_de[47:0]</obj_property>
+         <obj_property name="ObjectShortName">displaystate_serpent_de[47:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/decrypt_block/IDLE" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">IDLE[2:0]</obj_property>
+         <obj_property name="ObjectShortName">IDLE[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/decrypt_block/ROUND" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ROUND[2:0]</obj_property>
+         <obj_property name="ObjectShortName">ROUND[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/serpent_top_tb/dut/decrypt_block/MIX32" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">MIX32[2:0]</obj_property>
+         <obj_property name="ObjectShortName">MIX32[2:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

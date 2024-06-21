@@ -5,8 +5,8 @@ module serpent_top (
     input wire i_ena_en_de,
     input wire [255:0] i_key,
     input wire [127:0] i_data,
-    output reg [127:0] o_data,
-    output reg o_data_valid,
+    output wire [127:0] o_data,
+    output wire o_data_valid
 );
 
 //-------------------wires, registers-------------------
@@ -14,6 +14,10 @@ reg write_en, read_en;
 reg begin_key_schedule;
 reg enable_encrypt, enable_decrypt;
 wire [127:0] key_in, key_out;
+wire key_valid;
+wire [5:0] write_address, read_address, en_read_address, de_read_address;
+wire encrypt_done, decrypt_done;
+wire [127:0] data_out_encrypt, data_out_decrypt;
 
 reg [2:0] serpent_state;
 parameter IDLE          = 3'b000;
@@ -49,9 +53,9 @@ serpent_encrypt encrypt_block (
     .i_subkey_valid(key_valid),
     .i_key(key_out),
     .i_data(i_data),
-    .o_data(o_data),
-    .o_address(read_address),
-    .o_data_valid(o_data_valid)
+    .o_data(data_out_encrypt),
+    .o_address(en_read_address),
+    .o_data_valid(encrypt_done)
 );
 
 serpent_decrypt decrypt_block (
@@ -61,11 +65,15 @@ serpent_decrypt decrypt_block (
     .i_subkey_valid(key_valid),
     .i_key(key_out),
     .i_data(i_data),
-    .o_data(o_data),
-    .o_address(read_address),
-    .o_data_valid(o_data_valid)
+    .o_data(data_out_decrypt),
+    .o_address(de_read_address),
+    .o_data_valid(decrypt_done)
 );
 //------------------FSM-------------------
+assign o_data = (i_ena_en_de == 1'b1) ? data_out_encrypt : data_out_decrypt;
+assign o_data_valid = (i_ena_en_de == 1'b1) ? encrypt_done : decrypt_done;
+assign address = (serpent_state == KEY_SCHEDULE) ? write_address : read_address;
+assign read_address = (i_ena_en_de == 1'b1) ? en_read_address : de_read_address;
 
 always @(posedge i_clk or negedge i_rstn) begin
     if (~i_rstn) begin
