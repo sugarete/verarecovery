@@ -1,11 +1,10 @@
 ISim log file
-Running: D:\Code\verarecovery\ise\ml605\kdf\pbkdf2-hmac-whirlpool\top_whirlpool_hash_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Code/verarecovery/ise/ml605/kdf/pbkdf2-hmac-whirlpool/top_whirlpool_hash_tb_isim_beh.wdb 
+Running: D:\Code\verarecovery\ise\ml605\kdf\pbkdf2-hmac-whirlpool\top_whirlpool_hash_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -view D:/Code/verarecovery/ise/ml605/kdf/pbkdf2-hmac-whirlpool/tb/whirlpool_hash.wcfg -wdb D:/Code/verarecovery/ise/ml605/kdf/pbkdf2-hmac-whirlpool/top_whirlpool_hash_tb_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
 WARNING: File "D:/Code/verarecovery/src/pbkdf2_hmac_whirlpool/tb/top_whirlpool_hash_tb.v" Line 19.  For instance top_whirlpool_hash_tb/uut/, width 20 of formal port o_loop is not equal to width 19 of actual signal o_loop.
 Time resolution is 1 ps
 # onerror resume
-# wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.

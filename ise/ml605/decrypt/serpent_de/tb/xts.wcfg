@@ -10,7 +10,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="10" />
+   <WVObjectSize size="11" />
    <wvobject fp_name="/tb_serpent_xts_de/i_clk" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">i_clk</obj_property>
       <obj_property name="ObjectShortName">i_clk</obj_property>
@@ -89,5 +89,184 @@
       <obj_property name="ElementShortName">displaystate[95:0]</obj_property>
       <obj_property name="ObjectShortName">displaystate[95:0]</obj_property>
       <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="group21" type="group">
+      <obj_property name="label">KEY_MEM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/i_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_addr[5:0]</obj_property>
+         <obj_property name="ObjectShortName">i_addr[5:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mem[32:0,127:0]</obj_property>
+         <obj_property name="ObjectShortName">mem[32:0,127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[32]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[32,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[32,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[31]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[31,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[31,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[30]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[30,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[30,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[29]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[29,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[29,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[28]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[28,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[28,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[27]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[27,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[27,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[26]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[26,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[26,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[25]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[25,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[25,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[24]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[24,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[24,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[23]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[23,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[23,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[22]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[22,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[22,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[21]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[21,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[21,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[20]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[20,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[20,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[19]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[19,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[19,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[18]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[18,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[18,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[17]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[17,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[17,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[16]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[16,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[16,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[15]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[15,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[15,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[14]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[14,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[14,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[13]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[13,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[13,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[12]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[12,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[12,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[11]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[11,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[11,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[10]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[10,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[10,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[9]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[9,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[9,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[8]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[8,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[8,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[7]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[7,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[7,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[6]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[6,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[6,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[5]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[5,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[4]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[4,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[4,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[3]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[3,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[3,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[2]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[2,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[2,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[1]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[1,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[1,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_serpent_xts_de/uut/tweak_cipher/key_storage/mem[0]" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">[0,127:0]</obj_property>
+            <obj_property name="ObjectShortName">mem[0,127:0]</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+         </wvobject>
+      </wvobject>
    </wvobject>
 </wave_config>

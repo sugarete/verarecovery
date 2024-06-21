@@ -2,27 +2,9 @@ Command line:
    top_whirlpool_hash_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  64455
+     -socket  57832
 
-Sun Jun 16 22:05:17 2024
+Thu Jun 20 13:28:26 2024
 
 
- Elaboration Time: 0.078125 sec
-
- Current Memory Usage: 5180.6 Meg
-
- Total Signals          : 580
- Total Nets             : 10675
- Total Signal Drivers   : 922
- Total Blocks           : 153
- Total Primitive Blocks : 133
- Total Processes        : 1569
- Total Traceable Variables  : 585
- Total Scalar Nets and Variables : 22619
-
- Total Simulation Time: 0.796875 sec
-
- Current Memory Usage: 4791.65 Meg
-
-Sun Jun 16 22:17:52 2024
-
+ Elaboration Time: 0.09375 sec

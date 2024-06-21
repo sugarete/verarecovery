@@ -29,8 +29,7 @@ Compiling module serpent_xts_de
 Compiling module tb_serpent_xts_de
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
 Compiled 10 Verilog Units
 Built simulation executable D:/Code/verarecovery/ise/ml605/decrypt/serpent_de/tb_serpent_xts_de_isim_beh.exe
-Fuse Memory Usage: 32512 KB
+Fuse Memory Usage: 32748 KB
 Fuse CPU Usage: 390 ms

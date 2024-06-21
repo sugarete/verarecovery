@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Parameter xsthdpdir set to D:/Code/verarecovery/ise/ml605/decrypt/serpent_de/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Reading design: serpent_xts_de.prj
 
@@ -57,8 +57,8 @@ Analyzing Verilog file "D:\Code\verarecovery\src\serpent-bitslices\rtl\serpent_x
 Parsing module <serpent_xts_de>.
 
 
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 3.36 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.48 secs
  
 --> 
 

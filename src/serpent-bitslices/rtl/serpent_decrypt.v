@@ -63,34 +63,30 @@ always @(posedge i_clk or negedge i_rstn) begin
                     serpent_de_state <= MIX32;
                 end
             end
-            // MIX32: begin
-            //     mixed_round_32 <= {word_3_out ^ i_key[31:0], word_2_out ^ i_key[31:0], word_1_out ^ i_key[31:0], word_0_out ^ i_key[31:0]};
-            //     serpent_de_state <= ROUND;
-            // end
-            // ROUND: begin
-            //     if(decrypt_round == 0) begin
-            //         word_0_in <= i_data[31:0] ^ i_key[31:0];
-            //         word_1_in <= i_data[63:32] ^ i_key[63:32];
-            //         word_2_in <= i_data[95:64] ^ i_key[95:64];
-            //         word_3_in <= i_data[127:96] ^ i_key[127:96];
-            //         decrypt_round <= decrypt_round + 1;
-            //         serpent_de_state <= IDLE;
-            //     end else if(decrypt_round > 0) begin
-            //         word_0_in <= word_0_out ^ i_key[31:0];
-            //         word_1_in <= word_1_out ^ i_key[63:32];
-            //         word_2_in <= word_2_out ^ i_key[95:64];
-            //         word_3_in <= word_3_out ^ i_key[127:96];
-            //         decrypt_round <= decrypt_round - 1;
-            //         serpent_de_state <= ROUND;
-            //     end else begin
-            //         word_0_in <= word_0_out ^ i_key[31:0];
-            //         word_1_in <= word_1_out ^ i_key[63:32];
-            //         word_2_in <= word_2_out ^ i_key[95:64];
-            //         word_3_in <= word_3_out ^ i_key[127:96];
-            //         decrypt_round <= decrypt_round + 1;
-            //         serpent_de_state <= IDLE;
-            //     end
-            // end
+            MIX32: begin
+                mixed_round_32 <= {word_3_out ^ i_key[31:0], word_2_out ^ i_key[31:0], word_1_out ^ i_key[31:0], word_0_out ^ i_key[31:0]};
+                serpent_de_state <= ROUND;
+            end
+            ROUND: begin
+                if(decrypt_round == 6'd32) begin
+                    word_0_in <= mixed_round_32[31:0];
+                    word_1_in <= mixed_round_32[63:32];
+                    word_2_in <= mixed_round_32[95:64];
+                    word_3_in <= mixed_round_32[127:96];
+                    decrypt_round <= decrypt_round - 1;
+                    serpent_de_state <= ROUND;
+                end else if(decrypt_round > 0) begin
+                    word_0_in <= word_0_out ^ i_key[31:0];
+                    word_1_in <= word_1_out ^ i_key[63:32];
+                    word_2_in <= word_2_out ^ i_key[95:64];
+                    word_3_in <= word_3_out ^ i_key[127:96];
+                    decrypt_round <= decrypt_round - 1;
+                    serpent_de_state <= ROUND;
+                end else begin
+                    valid <= 1;
+                    serpent_de_state <= IDLE;
+                end
+            end
         endcase
     end
 end

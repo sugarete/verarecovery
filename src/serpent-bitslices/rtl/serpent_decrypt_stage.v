@@ -39,9 +39,9 @@ sboxes_inverse apply_sbox_inv (
     .o_word_3(o_data_word_2)
 );
 
-assign i_data_sbox_inv_word_0 = (i_round < 32) ? i_data_word_0 : o_data_lt_inv_word_0;
-assign i_data_sbox_inv_word_1 = (i_round < 32) ? i_data_word_1 : o_data_lt_inv_word_1;
-assign i_data_sbox_inv_word_2 = (i_round < 32) ? i_data_word_2 : o_data_lt_inv_word_2;
-assign i_data_sbox_inv_word_3 = (i_round < 32) ? i_data_word_3 : o_data_lt_inv_word_3;
+assign i_data_sbox_inv_word_0 = (i_round < 32) ? o_data_lt_inv_word_0 : i_data_word_0;
+assign i_data_sbox_inv_word_1 = (i_round < 32) ? o_data_lt_inv_word_1 : i_data_word_1;
+assign i_data_sbox_inv_word_2 = (i_round < 32) ? o_data_lt_inv_word_2 : i_data_word_2;
+assign i_data_sbox_inv_word_3 = (i_round < 32) ? o_data_lt_inv_word_3 : i_data_word_3;
 
 endmodule
