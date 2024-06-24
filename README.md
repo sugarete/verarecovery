@@ -18,7 +18,7 @@ The primary idea of password recovery is actually cracking it. So basically, the
 
 ### <p align="left">06/2024: SERPENT DECRYPT ON XTS MODE</p> 
 - [x] Design Key Schedule Module
-- [ ] Design Algorithm Flow: SBoxes - Linear Transform (1/2)
+- [x] Design Algorithm Flow: SBoxes - Linear Transform (1/2)
 - [x] Design Encryption Module 
 - [x] Design Decryption Module
-- [ ] Design XTS Module (1/2)
+- [x] Design XTS Module 
